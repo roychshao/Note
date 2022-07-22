@@ -1,0 +1,122 @@
+.topnav {
+    display: flex;
+    margin: 0px;
+    background-color: #C6CBE6;
+    padding: 1.5rem 0.625rem 0.625rem 0.625rem;
+    height: 80px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.sidebar-btn {
+    color: black;
+    font-size: 1.5rem;
+    margin-right: 1.2rem;
+    cursor: pointer;
+}
+
+span input {
+    box-sizing: border-box;
+    height: 2rem;
+    width: auto;
+    border: 1px solid #000000;
+    border-radius: 0.625rem;
+    padding-left: 0.4375rem;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.glass-icon {
+    position: relative;
+    bottom: 2px;
+}
+
+.title {
+    height: auto;
+    background-color: #D2E9FF;
+    margin-top: 2rem;
+    padding-top: 0.4rem;
+    text-align: center;
+    border-radius: 1rem;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.cmd-btn-box {
+    background-color: #57A0B0;
+    color: #F0F0F0;
+    height: 3rem;
+    width: 21%;
+    margin-top: 1rem;
+    cursor: pointer;
+    text-align: center;
+    line-height: 3rem;
+    border-radius: 10rem;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.edit-form {
+    width: 100%;
+}
+
+.edit-box {
+    margin-top: 1.5rem;
+}
+
+.edit-add {
+    margin-top: 1rem;
+    margin-left: 40%;
+    background-color: #78909c;
+    color: white;
+    font-size: 1.2rem;
+    width: 5rem;
+    height: 3.2rem;
+    border-radius: 10px;
+    border: 1px solid white;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.input-text {
+    display: inline;
+    margin: 0px;
+    font-size: 1.2rem;
+}
+
+.input-box {
+    height: 2rem;
+    width: 70%;
+    margin-left: 5%;
+    border: 1.5px solid black;
+}
+
+.item-box {
+    display: flex;
+    height: 4rem;
+    background-color: #ECEFF1;
+    border-radius: 10px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.texts {
+    padding-left: 0.5rem;
+}
+
+.item-first-line, .item-second-line, .item-third-line {
+    display: block;
+    margin: 0px;
+}
+
+.item-delete {
+    margin-left: 40%;
+    height: 2.7rem;
+    width: 4rem;
+    color: white;
+    background-color: #F36C60;
+    border: 1px solid #9E9E9E;
+    border-radius: 10px;
+}
+
+@media screen and (max-width: 387px) {
+    .glass-icon {
+        right: 3.2rem;
+    }
+}

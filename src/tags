@@ -1,0 +1,4 @@
+!_TAG_FILE_SORTED	2	/0=unsorted, 1=sorted, 2=foldcase/
+body	/home/roy/codes/Web/tmp/src/index.css	/^body {$/;"	s	language:CSS
+code	/home/roy/codes/Web/tmp/src/index.css	/^code {$/;"	s	language:CSS
+root	/home/roy/codes/Web/tmp/src/index.js	/^const root = ReactDOM.createRoot(document.getElementById('root'));$/;"	C	language:JavaScript

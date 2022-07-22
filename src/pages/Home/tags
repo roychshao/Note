@@ -1,0 +1,29 @@
+!_TAG_FILE_SORTED	2	/0=unsorted, 1=sorted, 2=foldcase/
+.cmd-btn-box	/home/roy/codes/Web/tmp/src/pages/Home/index.css	/^.cmd-btn-box {$/;"	c	language:CSS
+.edit-add	/home/roy/codes/Web/tmp/src/pages/Home/index.css	/^.edit-add {$/;"	c	language:CSS
+.edit-box	/home/roy/codes/Web/tmp/src/pages/Home/index.css	/^.edit-box {$/;"	c	language:CSS
+.edit-form	/home/roy/codes/Web/tmp/src/pages/Home/index.css	/^.edit-form {$/;"	c	language:CSS
+.glass-icon	/home/roy/codes/Web/tmp/src/pages/Home/index.css	/^    .glass-icon {$/;"	c	language:CSS
+.glass-icon	/home/roy/codes/Web/tmp/src/pages/Home/index.css	/^.glass-icon {$/;"	c	language:CSS
+.input-box	/home/roy/codes/Web/tmp/src/pages/Home/index.css	/^.input-box {$/;"	c	language:CSS
+.input-text	/home/roy/codes/Web/tmp/src/pages/Home/index.css	/^.input-text {$/;"	c	language:CSS
+.item-box	/home/roy/codes/Web/tmp/src/pages/Home/index.css	/^.item-box {$/;"	c	language:CSS
+.item-delete	/home/roy/codes/Web/tmp/src/pages/Home/index.css	/^.item-delete {$/;"	c	language:CSS
+.item-first-line	/home/roy/codes/Web/tmp/src/pages/Home/index.css	/^.item-first-line, .item-second-line, .item-third-line {$/;"	c	language:CSS
+.item-second-line	/home/roy/codes/Web/tmp/src/pages/Home/index.css	/^.item-first-line, .item-second-line, .item-third-line {$/;"	c	language:CSS
+.item-third-line	/home/roy/codes/Web/tmp/src/pages/Home/index.css	/^.item-first-line, .item-second-line, .item-third-line {$/;"	c	language:CSS
+.sidebar-btn	/home/roy/codes/Web/tmp/src/pages/Home/index.css	/^.sidebar-btn {$/;"	c	language:CSS
+.texts	/home/roy/codes/Web/tmp/src/pages/Home/index.css	/^.texts {$/;"	c	language:CSS
+.title	/home/roy/codes/Web/tmp/src/pages/Home/index.css	/^.title {$/;"	c	language:CSS
+.topnav	/home/roy/codes/Web/tmp/src/pages/Home/index.css	/^.topnav {$/;"	c	language:CSS
+container	/home/roy/codes/Web/tmp/src/pages/Home/index.js	/^        container: {$/;"	c	language:JavaScript	class:useEffect
+getData	/home/roy/codes/Web/tmp/src/pages/Home/index.js	/^async function getData(setData) {$/;"	f	language:JavaScript
+Home	/home/roy/codes/Web/tmp/src/pages/Home/index.js	/^const Home = () => {$/;"	C	language:JavaScript
+paddingLeft	/home/roy/codes/Web/tmp/src/pages/Home/index.js	/^            paddingLeft: "0px",$/;"	p	language:JavaScript	class:useEffect.container
+paddingRight	/home/roy/codes/Web/tmp/src/pages/Home/index.js	/^            paddingRight: "0px"$/;"	p	language:JavaScript	class:useEffect.container
+putData	/home/roy/codes/Web/tmp/src/pages/Home/index.js	/^async function putData(data) {$/;"	f	language:JavaScript
+setData	/home/roy/codes/Web/tmp/src/pages/Home/index.js	/^    const [data, setData] = useState([]);$/;"	C	language:JavaScript
+span input	/home/roy/codes/Web/tmp/src/pages/Home/index.css	/^span input {$/;"	s	language:CSS
+status	/home/roy/codes/Web/tmp/src/pages/Home/index.js	/^    const status = useRef(false);$/;"	C	language:JavaScript
+styles	/home/roy/codes/Web/tmp/src/pages/Home/index.js	/^        <div style={styles.div}>$/;"	M	language:JavaScript	class:AnonymousClass180bab900101
+useEffect	/home/roy/codes/Web/tmp/src/pages/Home/index.js	/^    useEffect(() => {$/;"	c	language:JavaScript

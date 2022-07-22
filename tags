@@ -1,0 +1,36 @@
+!_TAG_FILE_SORTED	2	/0=unsorted, 1=sorted, 2=foldcase/
+0	/home/roy/codes/Web/tmp/package.json	/^      ">0.2%",$/;"	s	language:JSON	array:browserslist.production
+0	/home/roy/codes/Web/tmp/package.json	/^      "last 1 chrome version",$/;"	s	language:JSON	array:browserslist.development
+0	/home/roy/codes/Web/tmp/package.json	/^      "react-app",$/;"	s	language:JSON	array:eslintConfig.extends
+1	/home/roy/codes/Web/tmp/package.json	/^      "last 1 firefox version",$/;"	s	language:JSON	array:browserslist.development
+1	/home/roy/codes/Web/tmp/package.json	/^      "not dead",$/;"	s	language:JSON	array:browserslist.production
+1	/home/roy/codes/Web/tmp/package.json	/^      "react-app\/jest"$/;"	s	language:JSON	array:eslintConfig.extends
+2	/home/roy/codes/Web/tmp/package.json	/^      "last 1 safari version"$/;"	s	language:JSON	array:browserslist.development
+2	/home/roy/codes/Web/tmp/package.json	/^      "not op_mini all"$/;"	s	language:JSON	array:browserslist.production
+@testing-library/jest-dom	/home/roy/codes/Web/tmp/package.json	/^    "@testing-library\/jest-dom": "^5.16.4",$/;"	s	language:JSON	object:dependencies
+@testing-library/react	/home/roy/codes/Web/tmp/package.json	/^    "@testing-library\/react": "^13.3.0",$/;"	s	language:JSON	object:dependencies
+@testing-library/user-event	/home/roy/codes/Web/tmp/package.json	/^    "@testing-library\/user-event": "^13.5.0",$/;"	s	language:JSON	object:dependencies
+bootstrap	/home/roy/codes/Web/tmp/package.json	/^    "bootstrap": "^5.1.3",$/;"	s	language:JSON	object:dependencies
+browserslist	/home/roy/codes/Web/tmp/package.json	/^  "browserslist": {$/;"	o	language:JSON
+build	/home/roy/codes/Web/tmp/package.json	/^    "build": "react-scripts build",$/;"	s	language:JSON	object:scripts
+data	/home/roy/codes/Web/tmp/db.json	/^        "data": []$/;"	a	language:JSON	object:posts
+dependencies	/home/roy/codes/Web/tmp/package.json	/^  "dependencies": {$/;"	o	language:JSON
+development	/home/roy/codes/Web/tmp/package.json	/^    "development": [$/;"	a	language:JSON	object:browserslist
+eject	/home/roy/codes/Web/tmp/package.json	/^    "eject": "react-scripts eject",$/;"	s	language:JSON	object:scripts
+eslintConfig	/home/roy/codes/Web/tmp/package.json	/^  "eslintConfig": {$/;"	o	language:JSON
+extends	/home/roy/codes/Web/tmp/package.json	/^    "extends": [$/;"	a	language:JSON	object:eslintConfig
+json-server	/home/roy/codes/Web/tmp/package.json	/^    "json-server": "^0.17.0",$/;"	s	language:JSON	object:dependencies
+name	/home/roy/codes/Web/tmp/package.json	/^  "name": "tmp",$/;"	s	language:JSON
+posts	/home/roy/codes/Web/tmp/db.json	/^    "posts": {$/;"	o	language:JSON
+private	/home/roy/codes/Web/tmp/package.json	/^  "private": true,$/;"	b	language:JSON
+production	/home/roy/codes/Web/tmp/package.json	/^    "production": [$/;"	a	language:JSON	object:browserslist
+react	/home/roy/codes/Web/tmp/package.json	/^    "react": "^18.2.0",$/;"	s	language:JSON	object:dependencies
+react-bootstrap	/home/roy/codes/Web/tmp/package.json	/^    "react-bootstrap": "^2.4.0",$/;"	s	language:JSON	object:dependencies
+react-dom	/home/roy/codes/Web/tmp/package.json	/^    "react-dom": "^18.2.0",$/;"	s	language:JSON	object:dependencies
+react-scripts	/home/roy/codes/Web/tmp/package.json	/^    "react-scripts": "5.0.1",$/;"	s	language:JSON	object:dependencies
+scripts	/home/roy/codes/Web/tmp/package.json	/^  "scripts": {$/;"	o	language:JSON
+server	/home/roy/codes/Web/tmp/package.json	/^    "server": "json-server --watch db.json"$/;"	s	language:JSON	object:scripts
+start	/home/roy/codes/Web/tmp/package.json	/^    "start": "react-scripts start",$/;"	s	language:JSON	object:scripts
+test	/home/roy/codes/Web/tmp/package.json	/^    "test": "react-scripts test",$/;"	s	language:JSON	object:scripts
+version	/home/roy/codes/Web/tmp/package.json	/^  "version": "0.1.0",$/;"	s	language:JSON
+web-vitals	/home/roy/codes/Web/tmp/package.json	/^    "web-vitals": "^2.1.4"$/;"	s	language:JSON	object:dependencies
