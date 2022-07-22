@@ -1,9 +1,10 @@
 import glass from './../public/glass.png';
 import info from './../public/info.png';
+import { API_GET_DATA } from '../../../global/constants'
 import { useState } from 'react';
 
 
-const Topnav = () => {
+const Topnav = ({setSidebarStatus}) => {
     
     const [searchStr, setSearchStr] = useState({});
     
@@ -13,21 +14,23 @@ const Topnav = () => {
             'searchStr': document.getElementById("searching-block").value
         }
         setSearchStr(strObj);
-        await fetch("http://localhost:3000", {
-            method: "Post",
-            headers: {
-                'Content-Type': 'application/json',
-                'Accept': 'application/json'
-            },
-            body: JSON.stringify(searchStr)
+        await fetch(API_GET_DATA, {
+            method: "GET",
+            headers: new Headers({
+                'Content-Type': 'application/json'
+            })
         })
         .then(response => response.json())
         .then(data => console.log(data));
     }
 
+    const openSidebar = async () => {
+        setSidebarStatus(true);
+    }
+
     return (
         <div className="topnav" width="100%">
-            <b className="sidebar-btn">三</b>
+            <b className="sidebar-btn" onClick={openSidebar}>三</b>
             <span>
                 <input id="searching-block" type="search" placeholder="Search..."/>
                 <img className="glass-icon" src={glass} alt="glass icon" height="35px"

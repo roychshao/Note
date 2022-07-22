@@ -1,27 +1,5 @@
 {
   "posts": {
-    "data": [
-      {
-        "id": "b091af85-d277-459a-b6bf-bbdfb5d8ea7b",
-        "title": "吃飯",
-        "description": "",
-        "date": "2022-07-06",
-        "time": "18:04"
-      },
-      {
-        "id": "0a71c1fa-53dd-44c4-bc43-fa9d703b5c0a",
-        "title": "吃飯",
-        "description": "",
-        "date": "2022-07-06",
-        "time": "18:04"
-      },
-      {
-        "id": "7bd7e4ad-b592-497c-8f69-57cc065d5d3b",
-        "title": "吃飯",
-        "description": "",
-        "date": "2022-07-06",
-        "time": "18:04"
-      }
-    ]
+    "data": []
   }
 }

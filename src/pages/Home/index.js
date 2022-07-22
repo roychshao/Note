@@ -1,6 +1,7 @@
 import './index.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Topnav from './components/Topnav';
+import Sidebar from './components/Sidebar';
 import { Container, Row, Col } from 'react-bootstrap';
 import { useState, useEffect, useRef } from 'react';
 import Edit from './components/Edit';
@@ -26,6 +27,7 @@ async function putData(data) {
 const Home = () => {
 
     const [data, setData] = useState([]);
+    const [sidebarStatus, setSidebarStatus] = useState(false);
     const status = useRef(false);
     
     useEffect(() => {
@@ -44,16 +46,23 @@ const Home = () => {
     const styles = {
         container: {
             paddingLeft: "0px",
-            paddingRight: "0px"
+            paddingRight: "0px",
+            marginLeft: "0px",
+            marginRight: "0px"
+        },
+        row: {
+            width: "100%"
         }
     }
 
     return (
         <div style={styles.div}>
-            <Topnav/>
-            <Container fluid style={styles.container}>
-                <Row>
-                    <Col className="g-0"></Col>
+            <Topnav setSidebarStatus={setSidebarStatus}/>
+            <Container fluid style={styles.container} className="container">
+                <Row style={styles.row}>
+                    <Col className="g-0">
+                        <Sidebar sidebarStatus={sidebarStatus} setSidebarStatus={setSidebarStatus}/>
+                    </Col>
                     <Col xs={10} className="g-0">
                         <h1 className="title">TO DO LIST</h1>
                         <Edit status={status} setData={setData}/>

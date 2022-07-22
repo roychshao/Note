@@ -30,14 +30,15 @@ const Edit = ({status, setData}) => {
         setData(function(prevData) {
             // ...功能可以直接取值,將括號全部去除
             status.current = true
-            return [{
+            return [
+            ...prevData,
+            {
                 id: v4(),
                 title,
                 description,
                 date,
                 time
-            },
-            ...prevData
+            }
             ]
         })
     }

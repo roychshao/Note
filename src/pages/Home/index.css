@@ -1,10 +1,15 @@
 .topnav {
     display: flex;
     margin: 0px;
-    background-color: #C6CBE6;
+    background-color: #78909c;
     padding: 1.5rem 0.625rem 0.625rem 0.625rem;
     height: 80px;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.container {
+    background-image: url("./public/wave.jpg");
+    background-size: auto;
 }
 
 .sidebar-btn {
@@ -12,6 +17,40 @@
     font-size: 1.5rem;
     margin-right: 1.2rem;
     cursor: pointer;
+}
+
+/* Sidebar settings */
+.sidebar-box {
+    padding-left: 0.8rem;
+    position: absolute;
+    height: 100%;
+    width: 0%;
+    background-color: #ADADAD;
+    z-index: 1;
+    transition: all 0.25s;
+}
+
+.close-sidebar-btn {
+    margin: 0;
+    height: 3rem;
+    line-height: 3rem;
+    padding-left: 80%;
+    color: white;
+}
+
+.sidebar-item {
+    display: block;
+    height: 3rem;
+    color: white;
+    text-align: center;
+    line-height: 3rem;
+    font-size: 1.2rem;
+    text-decoration: none;
+}
+
+.sidebar-item:hover {
+    background-color: #BEBEBE;
+    color: #3C3C3C;
 }
 
 span input {
@@ -31,12 +70,15 @@ span input {
 
 .title {
     height: auto;
-    background-color: #D2E9FF;
+    background-color: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+    -webkit-backdrop-filter: blur(20px);
+    backdrop-filter: blur(20px);
     margin-top: 2rem;
     padding-top: 0.4rem;
     text-align: center;
-    border-radius: 1rem;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 2rem;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    box-shadow: 0px 8px 32px 0 rgba(0, 0, 0, 0.37);
 }
 
 .cmd-btn-box {
@@ -52,6 +94,7 @@ span input {
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
+/* Edit area settings */
 .edit-form {
     width: 100%;
 }
@@ -76,7 +119,7 @@ span input {
 .input-text {
     display: inline;
     margin: 0px;
-    font-size: 1.2rem;
+    font-size: 1.4rem;
 }
 
 .input-box {
@@ -86,6 +129,7 @@ span input {
     border: 1.5px solid black;
 }
 
+/* Item settings */
 .item-box {
     display: flex;
     height: 4rem;
@@ -103,10 +147,11 @@ span input {
 .item-first-line, .item-second-line, .item-third-line {
     display: block;
     margin: 0px;
+    width: 3.6rem;
 }
 
 .item-delete {
-    margin-left: 40%;
+    margin-left: 60%;
     height: 2.7rem;
     width: 4rem;
     color: white;
