@@ -33,7 +33,7 @@ export const get_items = async (req, res) => {
 
 export const insert_item = async (req, res) => {
     const body = req.body;
-    console.log(body);
+    console.log(body.id, body.title, body.description, body.date, body.time);
     await Item.insert_item(
         body.id,
         body.title,

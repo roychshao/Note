@@ -18,7 +18,7 @@ app.use(express.json({ limit: "30mb", extended: true }));
 app.use(express.urlencoded({ limit: "30mb", extended: true }));
 
 //設定跨域
-app.use(cors())
+app.use(cors());
 
 //將每個request寫到access.log
 const __filename = fileURLToPath(import.meta.url);

@@ -9,46 +9,52 @@ import List from './components/List';
 import { API_HOST } from '../../global/constants'
 
 async function getData(setData) {
-    await fetch(`${API_HOST}/item/`, {
-        method: "GET",
-        headers: new Headers({
-            'Content-type': 'application/json'
-        })
+    const res = await fetch(`${API_HOST}/item/`)
+    .then(result => {
+        console.log("get items successfully.");
+    }).catch(err => {
+        console.log("get items failed.");
     })
-    .then(res => res.json)
-    .then(response => {
-        setData(response.data);
-    })
-        .catch(err => {
-            console.log(err);
-        })
+    const { data } = await res.json();
+    setData(data);
 }
 
-async function putData(data) {
-    await fetch(`${API_HOST}/item/create`, {
+async function putData(obj, operation) {
+    const res = await fetch(`${API_HOST}/item/${operation}/`, {
         method: "POST",
-        headers: new Headers({
-            'Content-type': 'application/json'
-        }),
-        body: JSON.stringify({data})
+        mode: "cors",
+        headers: {
+            'Content-Type': 'application/json',
+            'Accept': 'application/json'
+        },
+        body: JSON.stringify(obj)
+    }).then(result => {
+        console.log(`${operation} item successfully.`);
+    }).catch(err => {
+        console.log(`${operation} item failed.`);
     })
 }
 
 const Home = () => {
 
     const [data, setData] = useState([]);
+    const [obj, setObj] = useState({});
     const [sidebarStatus, setSidebarStatus] = useState(false);
-    const status = useRef(false);
-   
-    useEffect(() => {
-        if(!status.current)
-            return;
-        putData(data)
-        .then(data => {
-            status.current = false;
-        })
-    }, [data])
+    const renderStatus = useRef(0);
 
+    useEffect(() => {
+        if(renderStatus.current > 0) {
+            if(renderStatus.current === 1) {
+                console.log(obj.id, obj.title, obj.description, obj.date, obj.time);
+                putData(obj, 'create');
+            } else if(renderStatus.current === 2) {
+                console.log(obj.id);
+                putData(obj, 'delete');
+            }
+            renderStatus.current = 0;
+        }
+    }, [obj])
+    
     useEffect(() => {
         getData(setData);
     }, [])
@@ -75,9 +81,9 @@ const Home = () => {
                     </Col>
                     <Col xs={10} className="g-0">
                         <h1 className="title">TO DO LIST</h1>
-                        <Edit status={status} setData={setData}/>
+                        <Edit setData={setData} renderStatus={renderStatus} setObj={setObj}/>
                         <hr/>
-                        <List status={status} data={data} deleteData={setData}/>
+                        <List data={data} setData={setData} renderStatus={renderStatus} setObj={setObj}/>
                     </Col>
                     <Col className="g-0"></Col>
                 </Row>

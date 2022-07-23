@@ -2,9 +2,9 @@ import { useState } from 'react';
 import { v4 } from 'uuid';
 import { API_HOST } from '../../../global/constants'
 import './../index.css';
-import 'bootstrap/dist/css/bootstrap.min.css';
 
-const Edit = ({status, setData}) => {
+
+const Edit = ({setData, renderStatus, setObj}) => {
 
     const [title, setTitle] = useState("");
     const [description, setDescription] = useState("");
@@ -27,45 +27,22 @@ const Edit = ({status, setData}) => {
         setTime(e.target.value);
     }
 
-    function addItem() {
-        setData( async function(prevData) {
+    async function addItem() {
+        setData(function(prevData) {
             // ...功能可以直接取值,將括號全部去除
-            status.current = true
-            const obj = {
-                "id": v4(),
-                "title": title,
-                "description": description,
-                "date": date,
-                "time": time
-            }
-            console.log(obj);
-            await fetch(`${API_HOST}/item/create`, {
-                method: "POST",
-                headers: new Headers({
-                    "Content-type": "application/json"
-                }),
-                body: JSON.stringify(obj)
-            })
-                .then(response => {})
-                .catch(err => {
-                    console.log(err);
-                })
-            return [
-                ...prevData,
-                {
-                    id: v4(),
-                    title,
-                    description,
-                    date,
-                    time
-                }
+            var id = v4();
+            renderStatus.current = 1
+            setObj({"id":id,"title":title,"description":description,"date":date,"time":time});
+            return [{
+                id,
+                title,
+                description,
+                date,
+                time
+            },
+            ...prevData
             ]
         })
-        /*
-        const res = await fetch(`${API_HOST}/item/`);
-        const { data } = await res.json();
-        setData(data);
-        */
     }
 
     return (

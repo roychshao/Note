@@ -14,3 +14,4 @@ start	/home/roy/codes/Web/Note/backend/package.json	/^    "start": "nodemon inde
 type	/home/roy/codes/Web/Note/backend/package.json	/^  "type": "module",$/;"	s	language:JSON
 version	/home/roy/codes/Web/Note/backend/package.json	/^  "version": "0.1.0",$/;"	s	language:JSON
 __dirname	/home/roy/codes/Web/Note/backend/index.js	/^const __dirname = path.dirname(__filename);$/;"	C	language:JavaScript
+__filename	/home/roy/codes/Web/Note/backend/index.js	/^const __filename = fileURLToPath(import.meta.url);$/;"	C	language:JavaScript

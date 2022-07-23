@@ -6,11 +6,12 @@ marginLeft	/home/roy/codes/Web/Note/frontend/src/pages/Home/index.js	/^         
 marginRight	/home/roy/codes/Web/Note/frontend/src/pages/Home/index.js	/^            marginRight: "0px"$/;"	p	language:JavaScript	class:useEffect.container
 paddingLeft	/home/roy/codes/Web/Note/frontend/src/pages/Home/index.js	/^            paddingLeft: "0px",$/;"	p	language:JavaScript	class:useEffect.container
 paddingRight	/home/roy/codes/Web/Note/frontend/src/pages/Home/index.js	/^            paddingRight: "0px",$/;"	p	language:JavaScript	class:useEffect.container
-putData	/home/roy/codes/Web/Note/frontend/src/pages/Home/index.js	/^async function putData(data) {$/;"	f	language:JavaScript
+putData	/home/roy/codes/Web/Note/frontend/src/pages/Home/index.js	/^async function putData(obj, operation) {$/;"	f	language:JavaScript
+renderStatus	/home/roy/codes/Web/Note/frontend/src/pages/Home/index.js	/^    const renderStatus = useRef(0);$/;"	C	language:JavaScript
 row	/home/roy/codes/Web/Note/frontend/src/pages/Home/index.js	/^        row: {$/;"	c	language:JavaScript	class:useEffect
 setData	/home/roy/codes/Web/Note/frontend/src/pages/Home/index.js	/^    const [data, setData] = useState([]);$/;"	C	language:JavaScript
+setObj	/home/roy/codes/Web/Note/frontend/src/pages/Home/index.js	/^    const [obj, setObj] = useState({});$/;"	C	language:JavaScript
 setSidebarStatus	/home/roy/codes/Web/Note/frontend/src/pages/Home/index.js	/^    const [sidebarStatus, setSidebarStatus] = useState(false);$/;"	C	language:JavaScript
-status	/home/roy/codes/Web/Note/frontend/src/pages/Home/index.js	/^    const status = useRef(false);$/;"	C	language:JavaScript
 styles	/home/roy/codes/Web/Note/frontend/src/pages/Home/index.js	/^        <div style={styles.div}>$/;"	M	language:JavaScript	class:AnonymousClass361450640101
 useEffect	/home/roy/codes/Web/Note/frontend/src/pages/Home/index.js	/^    useEffect(() => {$/;"	c	language:JavaScript
 width	/home/roy/codes/Web/Note/frontend/src/pages/Home/index.js	/^            width: "100%"$/;"	p	language:JavaScript	class:useEffect.row

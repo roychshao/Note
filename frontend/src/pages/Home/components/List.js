@@ -1,6 +1,6 @@
 import Item from './Item'
 
-const List = ({status, data, deleteData}) => {
+const List = ({data, setData, renderStatus, setObj}) => {
     return (
         <div>{
             data.map((it) => {
@@ -13,8 +13,9 @@ const List = ({status, data, deleteData}) => {
                         description={description}
                         date={date}
                         time={time}
-                        deleteData={deleteData}
-                        status={status}
+                        setData={setData}
+                        renderStatus={renderStatus}
+                        setObj={setObj}
                     />
                 )
             })
