@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { v4 } from 'uuid';
+import { API_HOST } from '../../../global/constants'
 import './../index.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
@@ -27,22 +28,46 @@ const Edit = ({status, setData}) => {
     }
 
     function addItem() {
-        setData(function(prevData) {
+        setData( async function(prevData) {
             // ...功能可以直接取值,將括號全部去除
             status.current = true
-            return [
-            ...prevData,
-            {
-                id: v4(),
-                title,
-                description,
-                date,
-                time
+            const obj = {
+                "id": v4(),
+                "title": title,
+                "description": description,
+                "date": date,
+                "time": time
             }
+            console.log(obj);
+            await fetch(`${API_HOST}/item/create`, {
+                method: "POST",
+                headers: new Headers({
+                    "Content-type": "application/json"
+                }),
+                body: JSON.stringify(obj)
+            })
+                .then(response => {})
+                .catch(err => {
+                    console.log(err);
+                })
+            return [
+                ...prevData,
+                {
+                    id: v4(),
+                    title,
+                    description,
+                    date,
+                    time
+                }
             ]
         })
+        /*
+        const res = await fetch(`${API_HOST}/item/`);
+        const { data } = await res.json();
+        setData(data);
+        */
     }
-    
+
     return (
         <div className="edit-form">
             <div className="edit-box">

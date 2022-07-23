@@ -1,6 +1,6 @@
 import glass from './../public/glass.png';
 import info from './../public/info.png';
-import { API_GET_DATA } from '../../../global/constants'
+import { API_HOST } from '../../../global/constants'
 import { useState } from 'react';
 
 
@@ -14,7 +14,7 @@ const Topnav = ({setSidebarStatus}) => {
             'searchStr': document.getElementById("searching-block").value
         }
         setSearchStr(strObj);
-        await fetch(API_GET_DATA, {
+        await fetch(`${API_HOST}/item/`, {
             method: "GET",
             headers: new Headers({
                 'Content-Type': 'application/json'

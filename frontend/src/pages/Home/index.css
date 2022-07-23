@@ -68,6 +68,10 @@ span input {
     bottom: 2px;
 }
 
+.info-icon {
+    margin-left: 0.1rem;
+}
+
 .title {
     height: auto;
     background-color: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
@@ -141,17 +145,18 @@ span input {
 }
 
 .texts {
+    display: block;
     padding-left: 0.5rem;
+    width: 75%;
 }
 
 .item-first-line, .item-second-line, .item-third-line {
     display: block;
     margin: 0px;
-    width: 3.6rem;
+    width: 100%;
 }
 
 .item-delete {
-    margin-left: 60%;
     height: 2.7rem;
     width: 4rem;
     color: white;

@@ -1,0 +1,34 @@
+!_TAG_FILE_SORTED	2	/0=unsorted, 1=sorted, 2=foldcase/
+addItem	/home/roy/codes/Web/Note/frontend/src/pages/Home/components/Edit.js	/^    function addItem() {$/;"	f	language:JavaScript
+AnonymousFunction253cd4f00100	/home/roy/codes/Web/Note/frontend/src/pages/Home/components/Item.js	/^        deleteData( async function(prev) {$/;"	f	language:JavaScript	function:deleteItem
+AnonymousFunctioncc4d90870100	/home/roy/codes/Web/Note/frontend/src/pages/Home/components/Edit.js	/^        setData( async function(prevData) {$/;"	f	language:JavaScript	function:addItem
+date	/home/roy/codes/Web/Note/frontend/src/pages/Home/components/Edit.js	/^                "date": date,$/;"	p	language:JavaScript	class:addItem.AnonymousFunctioncc4d90870100.obj
+dateChange	/home/roy/codes/Web/Note/frontend/src/pages/Home/components/Edit.js	/^    function dateChange(e) {$/;"	f	language:JavaScript
+deleteItem	/home/roy/codes/Web/Note/frontend/src/pages/Home/components/Item.js	/^    function deleteItem() {$/;"	f	language:JavaScript
+description	/home/roy/codes/Web/Note/frontend/src/pages/Home/components/Edit.js	/^                "description": description,$/;"	p	language:JavaScript	class:addItem.AnonymousFunctioncc4d90870100.obj
+descriptionChange	/home/roy/codes/Web/Note/frontend/src/pages/Home/components/Edit.js	/^    function descriptionChange(e) {$/;"	f	language:JavaScript
+Edit	/home/roy/codes/Web/Note/frontend/src/pages/Home/components/Edit.js	/^const Edit = ({status, setData}) => {$/;"	C	language:JavaScript
+id	/home/roy/codes/Web/Note/frontend/src/pages/Home/components/Edit.js	/^                "id": v4(),$/;"	p	language:JavaScript	class:addItem.AnonymousFunctioncc4d90870100.obj
+id	/home/roy/codes/Web/Note/frontend/src/pages/Home/components/Item.js	/^                "id": id$/;"	p	language:JavaScript	class:deleteItem.AnonymousFunction253cd4f00100.obj
+id	/home/roy/codes/Web/Note/frontend/src/pages/Home/components/Item.js	/^const Item = ({id, title, description, date, time, deleteData, status}) => {$/;"	M	language:JavaScript	class:Item
+Item	/home/roy/codes/Web/Note/frontend/src/pages/Home/components/Item.js	/^const Item = ({id, title, description, date, time, deleteData, status}) => {$/;"	C	language:JavaScript
+List	/home/roy/codes/Web/Note/frontend/src/pages/Home/components/List.js	/^const List = ({status, data, deleteData}) => {$/;"	C	language:JavaScript
+obj	/home/roy/codes/Web/Note/frontend/src/pages/Home/components/Edit.js	/^            const obj = {$/;"	c	language:JavaScript	class:addItem.AnonymousFunctioncc4d90870100
+obj	/home/roy/codes/Web/Note/frontend/src/pages/Home/components/Item.js	/^            const obj = {$/;"	c	language:JavaScript	class:deleteItem.AnonymousFunction253cd4f00100
+openSidebar	/home/roy/codes/Web/Note/frontend/src/pages/Home/components/Topnav.js	/^    const openSidebar = async () => {$/;"	C	language:JavaScript
+searchStr	/home/roy/codes/Web/Note/frontend/src/pages/Home/components/Topnav.js	/^            'searchStr': document.getElementById("searching-block").value$/;"	p	language:JavaScript	class:strObj
+sendSearchRequest	/home/roy/codes/Web/Note/frontend/src/pages/Home/components/Topnav.js	/^    const sendSearchRequest = async () => {$/;"	C	language:JavaScript
+setDate	/home/roy/codes/Web/Note/frontend/src/pages/Home/components/Edit.js	/^    const [date, setDate] = useState("");$/;"	C	language:JavaScript
+setDescription	/home/roy/codes/Web/Note/frontend/src/pages/Home/components/Edit.js	/^    const [description, setDescription] = useState("");$/;"	C	language:JavaScript
+setSearchStr	/home/roy/codes/Web/Note/frontend/src/pages/Home/components/Topnav.js	/^    const [searchStr, setSearchStr] = useState({});$/;"	C	language:JavaScript
+setSidebarStatus	/home/roy/codes/Web/Note/frontend/src/pages/Home/components/Topnav.js	/^const Topnav = ({setSidebarStatus}) => {$/;"	M	language:JavaScript	class:Topnav
+setTime	/home/roy/codes/Web/Note/frontend/src/pages/Home/components/Edit.js	/^    const [time, setTime] = useState("");$/;"	C	language:JavaScript
+setTitle	/home/roy/codes/Web/Note/frontend/src/pages/Home/components/Edit.js	/^    const [title, setTitle] = useState("");$/;"	C	language:JavaScript
+status	/home/roy/codes/Web/Note/frontend/src/pages/Home/components/Edit.js	/^const Edit = ({status, setData}) => {$/;"	M	language:JavaScript	class:Edit
+status	/home/roy/codes/Web/Note/frontend/src/pages/Home/components/List.js	/^const List = ({status, data, deleteData}) => {$/;"	M	language:JavaScript	class:List
+strObj	/home/roy/codes/Web/Note/frontend/src/pages/Home/components/Topnav.js	/^        const strObj = {$/;"	c	language:JavaScript
+time	/home/roy/codes/Web/Note/frontend/src/pages/Home/components/Edit.js	/^                "time": time$/;"	p	language:JavaScript	class:addItem.AnonymousFunctioncc4d90870100.obj
+timeChange	/home/roy/codes/Web/Note/frontend/src/pages/Home/components/Edit.js	/^    function timeChange(e) {$/;"	f	language:JavaScript
+title	/home/roy/codes/Web/Note/frontend/src/pages/Home/components/Edit.js	/^                "title": title,$/;"	p	language:JavaScript	class:addItem.AnonymousFunctioncc4d90870100.obj
+titleChange	/home/roy/codes/Web/Note/frontend/src/pages/Home/components/Edit.js	/^    function titleChange(e) {$/;"	f	language:JavaScript
+Topnav	/home/roy/codes/Web/Note/frontend/src/pages/Home/components/Topnav.js	/^const Topnav = ({setSidebarStatus}) => {$/;"	C	language:JavaScript

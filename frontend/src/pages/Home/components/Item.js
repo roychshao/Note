@@ -1,8 +1,24 @@
+import { API_HOST } from '../../../global/constants'
+
 const Item = ({id, title, description, date, time, deleteData, status}) => {
-    
+
     function deleteItem() {
         status.current = true
-        deleteData(function(prev) {
+        deleteData( async function(prev) {
+            const obj = {
+                "id": id
+            }
+            await fetch(`${API_HOST}/item/delete`, {
+                method: "POST",
+                headers: new Headers({
+                    "Content-type": "application/json"
+                }),
+                body: JSON.stringify(obj)
+            })
+                .then(response => {})
+                .catch(err => {
+                    console.log(err);
+                })
             return prev.filter(item => item.id !== id)
         })
     }

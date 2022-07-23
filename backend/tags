@@ -1,0 +1,16 @@
+!_TAG_FILE_SORTED	2	/0=unsorted, 1=sorted, 2=foldcase/
+accessLogStream	/home/roy/codes/Web/Note/backend/index.js	/^var accessLogStream = fs.createWriteStream(path.join(__dirname, 'access.log'), { flags: 'a' })$/;"	v	language:JavaScript
+app	/home/roy/codes/Web/Note/backend/index.js	/^const app = express();$/;"	C	language:JavaScript
+author	/home/roy/codes/Web/Note/backend/package.json	/^  "author": "roy",$/;"	s	language:JSON
+dependencies	/home/roy/codes/Web/Note/backend/package.json	/^  "dependencies": {$/;"	o	language:JSON
+description	/home/roy/codes/Web/Note/backend/package.json	/^  "description": "",$/;"	s	language:JSON
+express	/home/roy/codes/Web/Note/backend/package.json	/^    "express": "^4.18.1",$/;"	s	language:JSON	object:dependencies
+license	/home/roy/codes/Web/Note/backend/package.json	/^  "license": "ISC",$/;"	s	language:JSON
+main	/home/roy/codes/Web/Note/backend/package.json	/^  "main": "index.js",$/;"	s	language:JSON
+name	/home/roy/codes/Web/Note/backend/package.json	/^  "name": "note",$/;"	s	language:JSON
+nodemon	/home/roy/codes/Web/Note/backend/package.json	/^    "nodemon": "^2.0.19"$/;"	s	language:JSON	object:dependencies
+scripts	/home/roy/codes/Web/Note/backend/package.json	/^  "scripts": {$/;"	o	language:JSON
+start	/home/roy/codes/Web/Note/backend/package.json	/^    "start": "nodemon index.js"$/;"	s	language:JSON	object:scripts
+type	/home/roy/codes/Web/Note/backend/package.json	/^  "type": "module",$/;"	s	language:JSON
+version	/home/roy/codes/Web/Note/backend/package.json	/^  "version": "0.1.0",$/;"	s	language:JSON
+__dirname	/home/roy/codes/Web/Note/backend/index.js	/^const __dirname = path.dirname(__filename);$/;"	C	language:JavaScript

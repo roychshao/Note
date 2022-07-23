@@ -6,20 +6,30 @@ import { Container, Row, Col } from 'react-bootstrap';
 import { useState, useEffect, useRef } from 'react';
 import Edit from './components/Edit';
 import List from './components/List';
-import { API_GET_DATA } from '../../global/constants'
+import { API_HOST } from '../../global/constants'
 
 async function getData(setData) {
-    const res = await fetch(API_GET_DATA);
-    const { data } = await res.json();
-    setData(data);
+    await fetch(`${API_HOST}/item/`, {
+        method: "GET",
+        headers: new Headers({
+            'Content-type': 'application/json'
+        })
+    })
+    .then(res => res.json)
+    .then(response => {
+        setData(response.data);
+    })
+        .catch(err => {
+            console.log(err);
+        })
 }
 
 async function putData(data) {
-    await fetch(API_GET_DATA, {
-        method: "PUT",
-        headers: {
+    await fetch(`${API_HOST}/item/create`, {
+        method: "POST",
+        headers: new Headers({
             'Content-type': 'application/json'
-        },
+        }),
         body: JSON.stringify({data})
     })
 }
@@ -29,7 +39,7 @@ const Home = () => {
     const [data, setData] = useState([]);
     const [sidebarStatus, setSidebarStatus] = useState(false);
     const status = useRef(false);
-    
+   
     useEffect(() => {
         if(!status.current)
             return;

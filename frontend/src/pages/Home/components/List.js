@@ -3,8 +3,8 @@ import Item from './Item'
 const List = ({status, data, deleteData}) => {
     return (
         <div>{
-            data.map((item) => {
-                const {id, title, description, date, time} = item;
+            data.map((it) => {
+                const {id, title, description, date, time} = it;
                 return (
                     <Item
                         key={id}
