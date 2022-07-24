@@ -1,6 +1,33 @@
 !_TAG_FILE_SORTED	2	/0=unsorted, 1=sorted, 2=foldcase/
+.close-sidebar-btn	/home/roy/codes/Web/Note/frontend/src/pages/Home/index.css	/^.close-sidebar-btn {$/;"	c	language:CSS
+.cmd-btn-box	/home/roy/codes/Web/Note/frontend/src/pages/Home/index.css	/^.cmd-btn-box {$/;"	c	language:CSS
+.container	/home/roy/codes/Web/Note/frontend/src/pages/Home/index.css	/^.container {$/;"	c	language:CSS
+.edit-add	/home/roy/codes/Web/Note/frontend/src/pages/Home/index.css	/^.edit-add {$/;"	c	language:CSS
+.edit-box	/home/roy/codes/Web/Note/frontend/src/pages/Home/index.css	/^.edit-box {$/;"	c	language:CSS
+.edit-form	/home/roy/codes/Web/Note/frontend/src/pages/Home/index.css	/^.edit-form {$/;"	c	language:CSS
+.glass-icon	/home/roy/codes/Web/Note/frontend/src/pages/Home/index.css	/^    .glass-icon {$/;"	c	language:CSS
+.glass-icon	/home/roy/codes/Web/Note/frontend/src/pages/Home/index.css	/^.glass-icon {$/;"	c	language:CSS
+.info-icon	/home/roy/codes/Web/Note/frontend/src/pages/Home/index.css	/^.info-icon {$/;"	c	language:CSS
+.input-box	/home/roy/codes/Web/Note/frontend/src/pages/Home/index.css	/^.input-box {$/;"	c	language:CSS
+.input-text	/home/roy/codes/Web/Note/frontend/src/pages/Home/index.css	/^.input-text {$/;"	c	language:CSS
+.item-box	/home/roy/codes/Web/Note/frontend/src/pages/Home/index.css	/^.item-box {$/;"	c	language:CSS
+.item-delete	/home/roy/codes/Web/Note/frontend/src/pages/Home/index.css	/^.item-delete {$/;"	c	language:CSS
+.item-first-line	/home/roy/codes/Web/Note/frontend/src/pages/Home/index.css	/^.item-first-line {$/;"	c	language:CSS
+.item-first-line	/home/roy/codes/Web/Note/frontend/src/pages/Home/index.css	/^.item-first-line, .item-second-line, .item-third-line {$/;"	c	language:CSS
+.item-second-line	/home/roy/codes/Web/Note/frontend/src/pages/Home/index.css	/^.item-first-line, .item-second-line, .item-third-line {$/;"	c	language:CSS
+.item-second-line	/home/roy/codes/Web/Note/frontend/src/pages/Home/index.css	/^.item-second-line {$/;"	c	language:CSS
+.item-third-line	/home/roy/codes/Web/Note/frontend/src/pages/Home/index.css	/^.item-first-line, .item-second-line, .item-third-line {$/;"	c	language:CSS
+.item-third-line	/home/roy/codes/Web/Note/frontend/src/pages/Home/index.css	/^.item-third-line {$/;"	c	language:CSS
+.sidebar-box	/home/roy/codes/Web/Note/frontend/src/pages/Home/index.css	/^.sidebar-box {$/;"	c	language:CSS
+.sidebar-btn	/home/roy/codes/Web/Note/frontend/src/pages/Home/index.css	/^.sidebar-btn {$/;"	c	language:CSS
+.sidebar-item	/home/roy/codes/Web/Note/frontend/src/pages/Home/index.css	/^.sidebar-item {$/;"	c	language:CSS
+.sidebar-item:hover	/home/roy/codes/Web/Note/frontend/src/pages/Home/index.css	/^.sidebar-item:hover {$/;"	c	language:CSS
+.texts	/home/roy/codes/Web/Note/frontend/src/pages/Home/index.css	/^.texts {$/;"	c	language:CSS
+.title	/home/roy/codes/Web/Note/frontend/src/pages/Home/index.css	/^.title {$/;"	c	language:CSS
+.topnav	/home/roy/codes/Web/Note/frontend/src/pages/Home/index.css	/^.topnav {$/;"	c	language:CSS
+AnonymousFunction361450640100	/home/roy/codes/Web/Note/frontend/src/pages/Home/index.js	/^        data.sort(function(a,b) {$/;"	f	language:JavaScript
 container	/home/roy/codes/Web/Note/frontend/src/pages/Home/index.js	/^        container: {$/;"	c	language:JavaScript	class:useEffect
-getData	/home/roy/codes/Web/Note/frontend/src/pages/Home/index.js	/^async function getData(setData) {$/;"	f	language:JavaScript
+getData	/home/roy/codes/Web/Note/frontend/src/pages/Home/index.js	/^async function getData() {$/;"	f	language:JavaScript
 Home	/home/roy/codes/Web/Note/frontend/src/pages/Home/index.js	/^const Home = () => {$/;"	C	language:JavaScript
 marginLeft	/home/roy/codes/Web/Note/frontend/src/pages/Home/index.js	/^            marginLeft: "0px",$/;"	p	language:JavaScript	class:useEffect.container
 marginRight	/home/roy/codes/Web/Note/frontend/src/pages/Home/index.js	/^            marginRight: "0px"$/;"	p	language:JavaScript	class:useEffect.container
@@ -12,6 +39,7 @@ row	/home/roy/codes/Web/Note/frontend/src/pages/Home/index.js	/^        row: {$/
 setData	/home/roy/codes/Web/Note/frontend/src/pages/Home/index.js	/^    const [data, setData] = useState([]);$/;"	C	language:JavaScript
 setObj	/home/roy/codes/Web/Note/frontend/src/pages/Home/index.js	/^    const [obj, setObj] = useState({});$/;"	C	language:JavaScript
 setSidebarStatus	/home/roy/codes/Web/Note/frontend/src/pages/Home/index.js	/^    const [sidebarStatus, setSidebarStatus] = useState(false);$/;"	C	language:JavaScript
-styles	/home/roy/codes/Web/Note/frontend/src/pages/Home/index.js	/^        <div style={styles.div}>$/;"	M	language:JavaScript	class:AnonymousClass361450640101
+span input	/home/roy/codes/Web/Note/frontend/src/pages/Home/index.css	/^span input {$/;"	s	language:CSS
+styles	/home/roy/codes/Web/Note/frontend/src/pages/Home/index.js	/^        <div style={styles.div}>$/;"	M	language:JavaScript	class:AnonymousClass361450640201
 useEffect	/home/roy/codes/Web/Note/frontend/src/pages/Home/index.js	/^    useEffect(() => {$/;"	c	language:JavaScript
 width	/home/roy/codes/Web/Note/frontend/src/pages/Home/index.js	/^            width: "100%"$/;"	p	language:JavaScript	class:useEffect.row

@@ -8,19 +8,31 @@ import Edit from './components/Edit';
 import List from './components/List';
 import { API_HOST } from '../../global/constants'
 
-async function getData(setData) {
-    const res = await fetch(`${API_HOST}/item/`)
-    .then(result => {
+async function getData() {
+    var data = [];
+    await fetch(`${API_HOST}/item/`)
+    .then(res => {
+        return res.json();
+    }).then(res => {
+        console.log(res.data);
+        data = res.data;
+        data.map(item => {
+            item.date = item.date.slice(0,10);
+            return item;
+        })
+        console.log(data[0].date + " " + data[0].time);
+        data.sort(function(a,b) {
+            return new Date(a.date+ " " + a.time) - new Date(b.date + " " + b.time);
+        })
         console.log("get items successfully.");
     }).catch(err => {
-        console.log("get items failed.");
+        console.log("get items failed. error: " + err.message);
     })
-    const { data } = await res.json();
-    setData(data);
+    return data;
 }
 
 async function putData(obj, operation) {
-    const res = await fetch(`${API_HOST}/item/${operation}/`, {
+    await fetch(`${API_HOST}/item/${operation}/`, {
         method: "POST",
         mode: "cors",
         headers: {
@@ -56,7 +68,12 @@ const Home = () => {
     }, [obj])
     
     useEffect(() => {
-        getData(setData);
+        console.log("trigger useEffect");
+        getData()
+            .then(data => {
+                console.log("data: " + data);
+                setData(data);
+            })
     }, [])
 
     const styles = {

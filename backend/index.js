@@ -12,7 +12,6 @@ const app = express();
 // Routes
 import itemRouter from "./routes/item.js";
 
-
 //設定express
 app.use(express.json({ limit: "30mb", extended: true }));
 app.use(express.urlencoded({ limit: "30mb", extended: true }));
@@ -26,8 +25,11 @@ const __dirname = path.dirname(__filename);
 var accessLogStream = fs.createWriteStream(path.join(__dirname, 'access.log'), { flags: 'a' })
 app.use(morgan('combined', { stream: accessLogStream }))
 
+//獲取靜態檔案
+app.use(express.static(path.join(__dirname,"./../frontend","build")))
+
 //設定localhost port
-const PORT = 3001;
+const PORT = 3002;
 app.listen(PORT, () => console.log(`Server Running on Port: http://localhost:${PORT}`))
 
 //設定request body parser

@@ -15,8 +15,8 @@ const Item = ({id, title, description, date, time, setData, renderStatus, setObj
         <div className="item-box">
             <div className="texts">
                 <p className="item-first-line">{title}</p>
-                <p className="item-third-line">{description}</p>
-                <p className="item-second-line">{`${date} ${time}`}</p>
+                <p className="item-second-line">{description}</p>
+                <p className="item-third-line">{`${date} ${time}`}</p>
             </div>
             <button className="item-delete" onClick={deleteItem}>刪除</button>
         </div>
