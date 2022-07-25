@@ -4,10 +4,11 @@ import morgan from "morgan";
 import fs from 'fs';
 import path from 'path';
 import cors from 'cors';
+import dotenv from 'dotenv';
 import { fileURLToPath } from 'url';
 import { pool } from "./db_interact/db_pool.js";
 const app = express();
-
+dotenv.config();
 
 // Routes
 import itemRouter from "./routes/item.js";
@@ -29,7 +30,7 @@ app.use(morgan('combined', { stream: accessLogStream }))
 app.use(express.static(path.join(__dirname,"./../frontend","build")))
 
 //設定localhost port
-const PORT = 3002;
+const PORT = process.env.PORT;
 app.listen(PORT, () => console.log(`Server Running on Port: http://localhost:${PORT}`))
 
 //設定request body parser

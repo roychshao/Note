@@ -25,6 +25,27 @@ const get_items = () => {
     })
 }
 
+const search_items = (search_str) => {
+    return new Promise((resolve, reject) => {
+        var sql = `SELECT * FROM item WHERE title REGEXP "${search_str}"`;
+        pool.getConnection( async (err, conn) => {
+            if(err) {
+                print_error(err);
+                reject(err);
+            } else {
+                await conn.query(sql, (err, results, fields) => {
+                    if(err)
+                        reject(err);
+                    else {
+                        conn.release();
+                        resolve(results);
+                    }
+                })
+            }
+        })
+    })
+}
+
 const insert_item = (id, title, description, date, time) => {
     return new Promise((resolve, reject) => {
         var sql = "INSERT INTO item VALUE(?,?,?,?,?)";
@@ -68,4 +89,4 @@ const delete_item = (id) => {
     })
 }
 
-export default { get_items, insert_item, delete_item }
+export default { get_items, search_items, insert_item, delete_item }

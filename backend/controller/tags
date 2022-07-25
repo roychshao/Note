@@ -4,3 +4,4 @@ body	/home/roy/codes/Web/Note/backend/controller/item.js	/^    const body = req.
 delete_item	/home/roy/codes/Web/Note/backend/controller/item.js	/^export const delete_item = async (req, res) => {$/;"	C	language:JavaScript
 get_items	/home/roy/codes/Web/Note/backend/controller/item.js	/^export const get_items = async (req, res) => {$/;"	C	language:JavaScript
 insert_item	/home/roy/codes/Web/Note/backend/controller/item.js	/^export const insert_item = async (req, res) => {$/;"	C	language:JavaScript
+search_items	/home/roy/codes/Web/Note/backend/controller/item.js	/^export const search_items = async (req, res) => {$/;"	C	language:JavaScript

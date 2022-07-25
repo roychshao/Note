@@ -14,7 +14,7 @@ const Item = ({id, title, description, date, time, setData, renderStatus, setObj
     return (
         <div className="item-box">
             <div className="texts">
-                <p className="item-first-line">{title}</p>
+                <p className="item-first-line">[{title}]</p>
                 <p className="item-second-line">{description}</p>
                 <p className="item-third-line">{`${date} ${time}`}</p>
             </div>

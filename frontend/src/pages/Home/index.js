@@ -10,7 +10,7 @@ import { API_HOST } from '../../global/constants'
 
 async function getData() {
     var data = [];
-    await fetch(`${API_HOST}/item/`)
+    await fetch(`${API_HOST}/item/?serverTimeZone=Asia/Shanghai`)
     .then(res => {
         return res.json();
     }).then(res => {
@@ -18,10 +18,11 @@ async function getData() {
         data = res.data;
         data.map(item => {
             item.date = item.date.slice(0,10);
+            item.time = item.time.slice(0,5);
             return item;
         })
         console.log(data[0].date + " " + data[0].time);
-        data.sort(function(a,b) {
+         data.sort(function(a,b) {
             return new Date(a.date+ " " + a.time) - new Date(b.date + " " + b.time);
         })
         console.log("get items successfully.");
@@ -52,6 +53,7 @@ const Home = () => {
     const [data, setData] = useState([]);
     const [obj, setObj] = useState({});
     const [sidebarStatus, setSidebarStatus] = useState(false);
+    const [cancelSearch, setCancelSearch] = useState(1);
     const renderStatus = useRef(0);
 
     useEffect(() => {
@@ -74,7 +76,7 @@ const Home = () => {
                 console.log("data: " + data);
                 setData(data);
             })
-    }, [])
+    }, [cancelSearch])
 
     const styles = {
         container: {
@@ -84,13 +86,14 @@ const Home = () => {
             marginRight: "0px"
         },
         row: {
-            width: "100%"
+            width: "100%",
+            margin: "0px"
         }
     }
 
     return (
         <div style={styles.div}>
-            <Topnav setSidebarStatus={setSidebarStatus}/>
+            <Topnav setSidebarStatus={setSidebarStatus} setData={setData} setCancelSearch={setCancelSearch}/>
             <Container fluid style={styles.container} className="container">
                 <Row style={styles.row}>
                     <Col className="g-0">

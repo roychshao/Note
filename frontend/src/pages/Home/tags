@@ -1,7 +1,7 @@
 !_TAG_FILE_SORTED	2	/0=unsorted, 1=sorted, 2=foldcase/
+#searching-block	/home/roy/codes/Web/Note/frontend/src/pages/Home/index.css	/^#searching-block {$/;"	i	language:CSS
 .close-sidebar-btn	/home/roy/codes/Web/Note/frontend/src/pages/Home/index.css	/^.close-sidebar-btn {$/;"	c	language:CSS
 .cmd-btn-box	/home/roy/codes/Web/Note/frontend/src/pages/Home/index.css	/^.cmd-btn-box {$/;"	c	language:CSS
-.container	/home/roy/codes/Web/Note/frontend/src/pages/Home/index.css	/^.container {$/;"	c	language:CSS
 .edit-add	/home/roy/codes/Web/Note/frontend/src/pages/Home/index.css	/^.edit-add {$/;"	c	language:CSS
 .edit-box	/home/roy/codes/Web/Note/frontend/src/pages/Home/index.css	/^.edit-box {$/;"	c	language:CSS
 .edit-form	/home/roy/codes/Web/Note/frontend/src/pages/Home/index.css	/^.edit-form {$/;"	c	language:CSS
@@ -25,10 +25,12 @@
 .texts	/home/roy/codes/Web/Note/frontend/src/pages/Home/index.css	/^.texts {$/;"	c	language:CSS
 .title	/home/roy/codes/Web/Note/frontend/src/pages/Home/index.css	/^.title {$/;"	c	language:CSS
 .topnav	/home/roy/codes/Web/Note/frontend/src/pages/Home/index.css	/^.topnav {$/;"	c	language:CSS
-AnonymousFunction361450640100	/home/roy/codes/Web/Note/frontend/src/pages/Home/index.js	/^        data.sort(function(a,b) {$/;"	f	language:JavaScript
+.topnav p	/home/roy/codes/Web/Note/frontend/src/pages/Home/index.css	/^.topnav p {$/;"	s	language:CSS
+AnonymousFunction361450640100	/home/roy/codes/Web/Note/frontend/src/pages/Home/index.js	/^         data.sort(function(a,b) {$/;"	f	language:JavaScript
 container	/home/roy/codes/Web/Note/frontend/src/pages/Home/index.js	/^        container: {$/;"	c	language:JavaScript	class:useEffect
 getData	/home/roy/codes/Web/Note/frontend/src/pages/Home/index.js	/^async function getData() {$/;"	f	language:JavaScript
 Home	/home/roy/codes/Web/Note/frontend/src/pages/Home/index.js	/^const Home = () => {$/;"	C	language:JavaScript
+margin	/home/roy/codes/Web/Note/frontend/src/pages/Home/index.js	/^            margin: "0px"$/;"	p	language:JavaScript	class:useEffect.row
 marginLeft	/home/roy/codes/Web/Note/frontend/src/pages/Home/index.js	/^            marginLeft: "0px",$/;"	p	language:JavaScript	class:useEffect.container
 marginRight	/home/roy/codes/Web/Note/frontend/src/pages/Home/index.js	/^            marginRight: "0px"$/;"	p	language:JavaScript	class:useEffect.container
 paddingLeft	/home/roy/codes/Web/Note/frontend/src/pages/Home/index.js	/^            paddingLeft: "0px",$/;"	p	language:JavaScript	class:useEffect.container
@@ -36,10 +38,10 @@ paddingRight	/home/roy/codes/Web/Note/frontend/src/pages/Home/index.js	/^       
 putData	/home/roy/codes/Web/Note/frontend/src/pages/Home/index.js	/^async function putData(obj, operation) {$/;"	f	language:JavaScript
 renderStatus	/home/roy/codes/Web/Note/frontend/src/pages/Home/index.js	/^    const renderStatus = useRef(0);$/;"	C	language:JavaScript
 row	/home/roy/codes/Web/Note/frontend/src/pages/Home/index.js	/^        row: {$/;"	c	language:JavaScript	class:useEffect
+setCancelSearch	/home/roy/codes/Web/Note/frontend/src/pages/Home/index.js	/^    const [cancelSearch, setCancelSearch] = useState(1);$/;"	C	language:JavaScript
 setData	/home/roy/codes/Web/Note/frontend/src/pages/Home/index.js	/^    const [data, setData] = useState([]);$/;"	C	language:JavaScript
 setObj	/home/roy/codes/Web/Note/frontend/src/pages/Home/index.js	/^    const [obj, setObj] = useState({});$/;"	C	language:JavaScript
 setSidebarStatus	/home/roy/codes/Web/Note/frontend/src/pages/Home/index.js	/^    const [sidebarStatus, setSidebarStatus] = useState(false);$/;"	C	language:JavaScript
-span input	/home/roy/codes/Web/Note/frontend/src/pages/Home/index.css	/^span input {$/;"	s	language:CSS
 styles	/home/roy/codes/Web/Note/frontend/src/pages/Home/index.js	/^        <div style={styles.div}>$/;"	M	language:JavaScript	class:AnonymousClass361450640201
 useEffect	/home/roy/codes/Web/Note/frontend/src/pages/Home/index.js	/^    useEffect(() => {$/;"	c	language:JavaScript
-width	/home/roy/codes/Web/Note/frontend/src/pages/Home/index.js	/^            width: "100%"$/;"	p	language:JavaScript	class:useEffect.row
+width	/home/roy/codes/Web/Note/frontend/src/pages/Home/index.js	/^            width: "100%",$/;"	p	language:JavaScript	class:useEffect.row

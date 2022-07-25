@@ -31,6 +31,40 @@ export const get_items = async (req, res) => {
         })
 }
 
+export const search_items = async (req, res) => {
+    
+    const { search_str } = req.query;
+
+    await Item.search_items(search_str)
+        .then(results => {
+            var response = {
+                "success": true,
+                "message": "搜尋item資料成功",
+                "data": []
+            };
+            for(var i = 0; i < results.length; ++i) {
+                var item_obj = {};
+                item_obj.id = results[i].id;
+                item_obj.title = results[i].title;
+                item_obj.description = results[i].description;
+                item_obj.date = results[i].date;
+                item_obj.time = results[i].time;
+                response.data.push(item_obj);
+            }
+            console.log(response);
+            res.status(201).json(response);
+        })
+        .catch(err => {
+            var response = {
+                "success": false,
+                "message": "搜尋item資料失敗 error: " + err.message,
+                "data": {}
+            }
+            console.log(response);
+            res.status(400).json(response);
+        })
+}
+
 export const insert_item = async (req, res) => {
     const body = req.body;
     console.log(body.id, body.title, body.description, body.date, body.time);
