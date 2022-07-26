@@ -1,6 +1,8 @@
 import glass from './../public/glass.png';
 import info from './../public/info.png';
-import { API_HOST } from '../../../global/constants'
+import GoogleLogin from 'react-google-login';
+import { GOOGLE_CLIENT_ID } from '../../../global/constants';
+import { API_HOST } from '../../../global/constants';
 import { useState } from 'react';
 
 
@@ -8,7 +10,7 @@ const Topnav = ({setSidebarStatus, setData, setCancelSearch}) => {
     
     const [searchStr, setSearchStr] = useState("");
 
-    // 會因為跨域問題無法post,但request成功
+    //獲取搜尋資料
     const sendSearchRequest = async () => {
         var data = [];
         const searchStr = document.getElementById("searching-block").value;
@@ -33,6 +35,15 @@ const Topnav = ({setSidebarStatus, setData, setCancelSearch}) => {
         })
     }
 
+    const loginSuccess = (res) => {
+        console.log("[Login success]", res.profileObj);
+    }
+
+    const loginFailed = (res) => {
+        console.log(GOOGLE_CLIENT_ID);
+        console.log("[Login failed]", res);
+    }
+
     const openSidebar = async () => {
         setSidebarStatus(true);
     }
@@ -47,10 +58,18 @@ const Topnav = ({setSidebarStatus, setData, setCancelSearch}) => {
                 console.log(prev);
                 return prev * -1;
                 })}}>C</p>
-            <img className="info-icon" src={info} alt="info icon" height="30px"
-                 onClick={()=>{alert("google login")}}/>
+            <GoogleLogin
+                clientId={GOOGLE_CLIENT_ID}
+                buttonText="LOGIN"
+                buttonText=""
+                onSuccess={loginSuccess}
+                onFailure={loginFailed}
+                redirectUri={`${API_HOST}/auth/google/login`}
+                cookiePolicy={'single_host_origin'}
+            />
         </div>
     )
 }
 
+                /*<img className="info-icon" src={info} alt="info icon" height="30px"/>*/
 export default Topnav;

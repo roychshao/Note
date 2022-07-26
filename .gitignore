@@ -5,6 +5,7 @@
 */tags
 /backend/.env
 /backend/access.log
+/frontend/src/global/constants.js
 /.pnp
 .pnp.js
 

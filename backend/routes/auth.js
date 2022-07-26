@@ -1,9 +1,13 @@
 import express from 'express'
 import passport from 'passport'
 import crypto from 'crypto'
+import dotenv from 'dotenv'
 import { Strategy as GoogleStrategy } from 'passport-google-oauth20'
 import User from "./../db_interact/user.js";
+
+dotenv.config();
 var router = express.Router();
+const secret = process.env.SECRET;
 
 //設定passport
 passport.use(new GoogleStrategy({
@@ -75,11 +79,18 @@ function isLoggedIn(req, res, next) {
 }
 
 router.get('/google/success', isLoggedIn, (req, res) => {
+    console.log('req.user : ', req.user);
+    console.log("session");
+    console.log(req.sessionID, req.session, res.getHeaders())
     if(req.user.result === "USER_NOT_EXIST_IN_DB") {
         res.redirect("http://localhost:3000/callback/signup")
     } else {
         res.redirect("http://localhost:3000/login");
     }
+})
+
+router.get('google/failure', (req, res) => {
+    res.send("Failed to authenticate..");
 })
 
 router.get("/logout", (req, res) => {
