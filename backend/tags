@@ -7,9 +7,11 @@ description	/home/roy/codes/Web/Note/backend/package.json	/^  "description": "",
 express	/home/roy/codes/Web/Note/backend/package.json	/^    "express": "^4.18.1",$/;"	s	language:JSON	object:dependencies
 license	/home/roy/codes/Web/Note/backend/package.json	/^  "license": "ISC",$/;"	s	language:JSON
 main	/home/roy/codes/Web/Note/backend/package.json	/^  "main": "index.js",$/;"	s	language:JSON
+MYSQLStore	/home/roy/codes/Web/Note/backend/index.js	/^const MYSQLStore = mysqlSession(session);$/;"	C	language:JavaScript
 name	/home/roy/codes/Web/Note/backend/package.json	/^  "name": "note",$/;"	s	language:JSON
 nodemon	/home/roy/codes/Web/Note/backend/package.json	/^    "nodemon": "^2.0.19"$/;"	s	language:JSON	object:dependencies
 scripts	/home/roy/codes/Web/Note/backend/package.json	/^  "scripts": {$/;"	o	language:JSON
+sessionStore	/home/roy/codes/Web/Note/backend/index.js	/^var sessionStore = new MYSQLStore({}, pool)$/;"	v	language:JavaScript
 start	/home/roy/codes/Web/Note/backend/package.json	/^    "start": "nodemon index.js"$/;"	s	language:JSON	object:scripts
 type	/home/roy/codes/Web/Note/backend/package.json	/^  "type": "module",$/;"	s	language:JSON
 version	/home/roy/codes/Web/Note/backend/package.json	/^  "version": "0.1.0",$/;"	s	language:JSON

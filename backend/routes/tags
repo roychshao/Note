@@ -1,2 +1,11 @@
 !_TAG_FILE_SORTED	2	/0=unsorted, 1=sorted, 2=foldcase/
+AnonymousFunction504fc5a90100	/home/roy/codes/Web/Note/backend/routes/auth.js	/^    async function (req, res, accessToken, refreshToken, profile, done) {$/;"	f	language:JavaScript
+AnonymousFunction504fc5a90200	/home/roy/codes/Web/Note/backend/routes/auth.js	/^passport.serializeUser(function (user, done) {$/;"	f	language:JavaScript
+AnonymousFunction504fc5a90300	/home/roy/codes/Web/Note/backend/routes/auth.js	/^passport.deserializeUser(function (user, done) {$/;"	f	language:JavaScript
+data	/home/roy/codes/Web/Note/backend/routes/auth.js	/^                "data": {}$/;"	p	language:JavaScript	class:AnonymousFunction504fc5a90100.response
+isLoggedIn	/home/roy/codes/Web/Note/backend/routes/auth.js	/^function isLoggedIn(req, res, next) {$/;"	f	language:JavaScript
+message	/home/roy/codes/Web/Note/backend/routes/auth.js	/^                "message": "註冊使用者失敗",$/;"	p	language:JavaScript	class:AnonymousFunction504fc5a90100.response
+response	/home/roy/codes/Web/Note/backend/routes/auth.js	/^            var response = {$/;"	c	language:JavaScript	class:AnonymousFunction504fc5a90100
+router	/home/roy/codes/Web/Note/backend/routes/auth.js	/^var router = express.Router();$/;"	v	language:JavaScript
 router	/home/roy/codes/Web/Note/backend/routes/item.js	/^const router = express.Router();$/;"	C	language:JavaScript
+success	/home/roy/codes/Web/Note/backend/routes/auth.js	/^                "success": false,$/;"	p	language:JavaScript	class:AnonymousFunction504fc5a90100.response

@@ -48,7 +48,7 @@ const search_items = (search_str) => {
 
 const insert_item = (id, title, description, date, time) => {
     return new Promise((resolve, reject) => {
-        var sql = "INSERT INTO item VALUE(?,?,?,?,?)";
+        var sql = "INSERT INTO item(id, user_id, title, description, date, time) VALUE(?,'12345',?,?,?,?)";
         pool.getConnection( async (err, conn) => {
             if(err) {
                 print_error(err);

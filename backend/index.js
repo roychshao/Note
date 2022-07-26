@@ -1,17 +1,26 @@
 import express from "express";
 import bodyParser from "body-parser";
 import morgan from "morgan";
+import session from "express-session";
+import mysqlSession from "express-mysql-session";
+import helmet from "helmet";
 import fs from 'fs';
 import path from 'path';
 import cors from 'cors';
+import passport from "passport";
 import dotenv from 'dotenv';
 import { fileURLToPath } from 'url';
 import { pool } from "./db_interact/db_pool.js";
 const app = express();
 dotenv.config();
 
-// Routes
+
+// import routers
 import itemRouter from "./routes/item.js";
+import authRouter from "./routes/auth.js";
+
+//資訊安全
+app.use(helmet.hidePoweredBy());
 
 //設定express
 app.use(express.json({ limit: "30mb", extended: true }));
@@ -37,8 +46,27 @@ app.listen(PORT, () => console.log(`Server Running on Port: http://localhost:${P
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 
+//設定session
+const MYSQLStore = mysqlSession(session);
+var sessionStore = new MYSQLStore({}, pool)
+
+app.use(session({
+    secret: process.env.SECRET,
+    resave: false,
+    saveUninitialized: false,
+    store: sessionStore,
+    cookie: {
+        maxAge: 86400000
+    }
+}));
+
+app.use(passport.initialize());
+app.use(passport.session());
+
 // ROUTES
 app.use('/item', itemRouter);
+app.use('/auth', authRouter);
+
 
 //測試server在線
 app.get('/', (req, res) => {
