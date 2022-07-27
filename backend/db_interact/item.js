@@ -4,15 +4,15 @@ function print_error(err) {
     console.log("error: " + err.message);
 }
 
-const get_items = () => {
+const get_items = (user_id) => {
     return new Promise((resolve, reject) => {
-        var sql = "SELECT * FROM item";
+        var sql = "SELECT * FROM item WHERE user_id = ?";
         pool.getConnection( async (err, conn) => {
             if(err) {
                 print_error(err);
                 reject(err);
             } else {
-                await conn.query(sql, (err, results, fields) => {
+                await conn.query(sql, user_id, (err, results, fields) => {
                     if(err)
                         reject(err);
                     else {
@@ -25,15 +25,15 @@ const get_items = () => {
     })
 }
 
-const search_items = (search_str) => {
+const search_items = (user_id, search_str) => {
     return new Promise((resolve, reject) => {
-        var sql = `SELECT * FROM item WHERE title REGEXP "${search_str}"`;
+        var sql = `SELECT * FROM item WHERE user_id = ? AND title REGEXP "${search_str}"`;
         pool.getConnection( async (err, conn) => {
             if(err) {
                 print_error(err);
                 reject(err);
             } else {
-                await conn.query(sql, (err, results, fields) => {
+                await conn.query(sql, user_id, (err, results, fields) => {
                     if(err)
                         reject(err);
                     else {
@@ -46,16 +46,16 @@ const search_items = (search_str) => {
     })
 }
 
-const insert_item = (id, title, description, date, time) => {
+const insert_item = (user_id, id, title, description, date, time) => {
     return new Promise((resolve, reject) => {
-        var sql = "INSERT INTO item(id, user_id, title, description, date, time) VALUE(?,'12345',?,?,?,?)";
+        var sql = "INSERT INTO item(id, user_id, title, description, date, time) VALUE(?,?,?,?,?,?)";
         pool.getConnection( async (err, conn) => {
             if(err) {
                 print_error(err);
                 reject(err);
             } else {
                 console.log("pool connected.");
-                await conn.query(sql, [id, title, description, date, time], (err, results, fields) => {
+                await conn.query(sql, [id, user_id, title, description, date, time], (err, results, fields) => {
                     if(err)
                         reject(err);
                     else {

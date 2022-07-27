@@ -1,7 +1,10 @@
 import Item from './../db_interact/item.js';
 
 export const get_items = async (req, res) => {
-    await Item.get_items()
+
+    const { user_id } = req.session?.passport?.user;
+
+    await Item.get_items(user_id)
         .then(results => {
             var response = {
                 "success": true,
@@ -34,8 +37,9 @@ export const get_items = async (req, res) => {
 export const search_items = async (req, res) => {
     
     const { search_str } = req.query;
+    const { user_id } = req.session?.passport?.user;
 
-    await Item.search_items(search_str)
+    await Item.search_items(user_id, search_str)
         .then(results => {
             var response = {
                 "success": true,
@@ -67,8 +71,10 @@ export const search_items = async (req, res) => {
 
 export const insert_item = async (req, res) => {
     const body = req.body;
+    const { user_id } = req.session?.passport?.user;
     console.log(body.id, body.title, body.description, body.date, body.time);
     await Item.insert_item(
+        user_id,
         body.id,
         body.title,
         body.description,

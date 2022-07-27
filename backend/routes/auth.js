@@ -3,7 +3,9 @@ import passport from 'passport'
 import crypto from 'crypto'
 import dotenv from 'dotenv'
 import { Strategy as GoogleStrategy } from 'passport-google-oauth20'
-import User from "./../db_interact/user.js";
+import dbUser from "./../db_interact/user.js";
+import { signup } from "./../controller/user.js";
+import { get_items } from "./../controller/item.js";
 
 dotenv.config();
 var router = express.Router();
@@ -25,7 +27,7 @@ passport.use(new GoogleStrategy({
             const user_id = sha256Hasher.update(user_email).digest('base64');
 
             //確認使用者是否存在database
-            await User.authenticate(user_id)
+            await dbUser.authenticate(user_id)
                 .then(results => {
                     if(results.length == 0) {
                         return done(null,
@@ -40,7 +42,7 @@ passport.use(new GoogleStrategy({
                     } else {
                         return done(null,
                             {
-                                results: "USER_EXIST_IN_DB",
+                                result: "USER_EXIST_IN_DB",
                                 user_id: user_id,
                             });
                     }
@@ -78,16 +80,18 @@ function isLoggedIn(req, res, next) {
     req.user ? next() : res.sendStatus(401);
 }
 
-router.get('/google/success', isLoggedIn, (req, res) => {
-    console.log('req.user : ', req.user);
-    console.log("session");
-    console.log(req.sessionID, req.session, res.getHeaders())
+router.get('/google/success', isLoggedIn, (req, res, next) => {
+    //console.log('req.user : ', req.user);
+    //console.log("session");
+    // console.log(req.sessionID, req.session, res.getHeaders())
     if(req.user.result === "USER_NOT_EXIST_IN_DB") {
-        res.redirect("http://localhost:3000/callback/signup")
+        console.log(req.user.result);
+        next();
     } else {
-        res.redirect("http://localhost:3000/login");
+        console.log(req.user.result);
+        res.redirect("http://localhost:3000");
     }
-})
+}, signup, get_items);
 
 router.get('google/failure', (req, res) => {
     res.send("Failed to authenticate..");

@@ -12,7 +12,7 @@ const authenticate = (id) => {
                 print_error(err);
                 reject(err);
             } else {
-                await conn.query(sql, (err, results, fields) => {
+                await conn.query(sql, id, (err, results, fields) => {
                     if(err)
                         reject(err);
                     else {
@@ -47,4 +47,4 @@ const sign_up = (id, name, email) => {
 }
 
 
-export default { authenticate }
+export default { authenticate, sign_up }

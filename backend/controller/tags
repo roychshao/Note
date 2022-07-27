@@ -5,3 +5,4 @@ delete_item	/home/roy/codes/Web/Note/backend/controller/item.js	/^export const d
 get_items	/home/roy/codes/Web/Note/backend/controller/item.js	/^export const get_items = async (req, res) => {$/;"	C	language:JavaScript
 insert_item	/home/roy/codes/Web/Note/backend/controller/item.js	/^export const insert_item = async (req, res) => {$/;"	C	language:JavaScript
 search_items	/home/roy/codes/Web/Note/backend/controller/item.js	/^export const search_items = async (req, res) => {$/;"	C	language:JavaScript
+signup	/home/roy/codes/Web/Note/backend/controller/user.js	/^export const signup = async (req, res, next) => {$/;"	C	language:JavaScript

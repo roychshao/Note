@@ -8,5 +8,6 @@ message	/home/roy/codes/Web/Note/backend/routes/auth.js	/^                "messa
 response	/home/roy/codes/Web/Note/backend/routes/auth.js	/^            var response = {$/;"	c	language:JavaScript	class:AnonymousFunction504fc5a90100
 router	/home/roy/codes/Web/Note/backend/routes/auth.js	/^var router = express.Router();$/;"	v	language:JavaScript
 router	/home/roy/codes/Web/Note/backend/routes/item.js	/^const router = express.Router();$/;"	C	language:JavaScript
+router	/home/roy/codes/Web/Note/backend/routes/user.js	/^const router = express.Router();$/;"	C	language:JavaScript
 secret	/home/roy/codes/Web/Note/backend/routes/auth.js	/^const secret = process.env.SECRET;$/;"	C	language:JavaScript
 success	/home/roy/codes/Web/Note/backend/routes/auth.js	/^                "success": false,$/;"	p	language:JavaScript	class:AnonymousFunction504fc5a90100.response

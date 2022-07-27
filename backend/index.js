@@ -16,6 +16,7 @@ dotenv.config();
 
 
 // import routers
+import userRouter from "./routes/user.js";
 import itemRouter from "./routes/item.js";
 import authRouter from "./routes/auth.js";
 
@@ -64,6 +65,7 @@ app.use(passport.initialize());
 app.use(passport.session());
 
 // ROUTES
+app.use('/user', userRouter);
 app.use('/item', itemRouter);
 app.use('/auth', authRouter);
 
