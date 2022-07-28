@@ -1,5 +1,4 @@
 !_TAG_FILE_SORTED	2	/0=unsorted, 1=sorted, 2=foldcase/
-${API_HOST}/auth/google/login	/home/roy/codes/Web/Note/frontend/src/pages/Home/components/Topnav.js	/^                redirectUri={`${API_HOST}\/auth\/google\/login`}$/;"	M	language:JavaScript	class:redirectUri
 addItem	/home/roy/codes/Web/Note/frontend/src/pages/Home/components/Edit.js	/^    async function addItem() {$/;"	f	language:JavaScript
 AnonymousFunction208ba7590100	/home/roy/codes/Web/Note/frontend/src/pages/Home/components/Topnav.js	/^            data.sort(function(a,b) {$/;"	f	language:JavaScript
 AnonymousFunction208ba7590200	/home/roy/codes/Web/Note/frontend/src/pages/Home/components/Topnav.js	/^            <p onClick={()=>{setCancelSearch(function(prev) {$/;"	f	language:JavaScript
@@ -11,14 +10,9 @@ dateChange	/home/roy/codes/Web/Note/frontend/src/pages/Home/components/Edit.js	/
 deleteItem	/home/roy/codes/Web/Note/frontend/src/pages/Home/components/Item.js	/^    function deleteItem() {$/;"	f	language:JavaScript
 descriptionChange	/home/roy/codes/Web/Note/frontend/src/pages/Home/components/Edit.js	/^    function descriptionChange(e) {$/;"	f	language:JavaScript
 Edit	/home/roy/codes/Web/Note/frontend/src/pages/Home/components/Edit.js	/^const Edit = ({setData, renderStatus, setObj}) => {$/;"	C	language:JavaScript
-GOOGLE_CLIENT_ID	/home/roy/codes/Web/Note/frontend/src/pages/Home/components/Topnav.js	/^                clientId={GOOGLE_CLIENT_ID}$/;"	M	language:JavaScript	class:clientId
 id	/home/roy/codes/Web/Note/frontend/src/pages/Home/components/Item.js	/^const Item = ({id, title, description, date, time, setData, renderStatus, setObj}) => {$/;"	M	language:JavaScript	class:Item
 Item	/home/roy/codes/Web/Note/frontend/src/pages/Home/components/Item.js	/^const Item = ({id, title, description, date, time, setData, renderStatus, setObj}) => {$/;"	C	language:JavaScript
 List	/home/roy/codes/Web/Note/frontend/src/pages/Home/components/List.js	/^const List = ({data, setData, renderStatus, setObj}) => {$/;"	C	language:JavaScript
-loginFailed	/home/roy/codes/Web/Note/frontend/src/pages/Home/components/Topnav.js	/^                onFailure={loginFailed}$/;"	M	language:JavaScript	class:onFailure
-loginFailed	/home/roy/codes/Web/Note/frontend/src/pages/Home/components/Topnav.js	/^    const loginFailed = (res) => {$/;"	C	language:JavaScript
-loginSuccess	/home/roy/codes/Web/Note/frontend/src/pages/Home/components/Topnav.js	/^                onSuccess={loginSuccess}$/;"	M	language:JavaScript	class:onSuccess
-loginSuccess	/home/roy/codes/Web/Note/frontend/src/pages/Home/components/Topnav.js	/^    const loginSuccess = (res) => {$/;"	C	language:JavaScript
 openSidebar	/home/roy/codes/Web/Note/frontend/src/pages/Home/components/Topnav.js	/^    const openSidebar = async () => {$/;"	C	language:JavaScript
 searchStr	/home/roy/codes/Web/Note/frontend/src/pages/Home/components/Topnav.js	/^        const searchStr = document.getElementById("searching-block").value;$/;"	C	language:JavaScript
 sendSearchRequest	/home/roy/codes/Web/Note/frontend/src/pages/Home/components/Topnav.js	/^    const sendSearchRequest = async () => {$/;"	C	language:JavaScript
@@ -29,7 +23,6 @@ setSearchStr	/home/roy/codes/Web/Note/frontend/src/pages/Home/components/Topnav.
 setSidebarStatus	/home/roy/codes/Web/Note/frontend/src/pages/Home/components/Topnav.js	/^const Topnav = ({setSidebarStatus, setData, setCancelSearch}) => {$/;"	M	language:JavaScript	class:Topnav
 setTime	/home/roy/codes/Web/Note/frontend/src/pages/Home/components/Edit.js	/^    const [time, setTime] = useState("");$/;"	C	language:JavaScript
 setTitle	/home/roy/codes/Web/Note/frontend/src/pages/Home/components/Edit.js	/^    const [title, setTitle] = useState("");$/;"	C	language:JavaScript
-single_host_origin	/home/roy/codes/Web/Note/frontend/src/pages/Home/components/Topnav.js	/^                cookiePolicy={'single_host_origin'}$/;"	M	language:JavaScript	class:cookiePolicy
 timeChange	/home/roy/codes/Web/Note/frontend/src/pages/Home/components/Edit.js	/^    function timeChange(e) {$/;"	f	language:JavaScript
 titleChange	/home/roy/codes/Web/Note/frontend/src/pages/Home/components/Edit.js	/^    function titleChange(e) {$/;"	f	language:JavaScript
 Topnav	/home/roy/codes/Web/Note/frontend/src/pages/Home/components/Topnav.js	/^const Topnav = ({setSidebarStatus, setData, setCancelSearch}) => {$/;"	C	language:JavaScript

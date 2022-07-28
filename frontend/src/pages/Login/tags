@@ -1,0 +1,15 @@
+!_TAG_FILE_SORTED	2	/0=unsorted, 1=sorted, 2=foldcase/
+${API_HOST}/auth/google/login	/home/roy/codes/Web/Note/frontend/src/pages/Login/index.js	/^                                apiUrl={`${API_HOST}\/auth\/google\/login`}$/;"	M	language:JavaScript	class:apiUrl
+.login-page	/home/roy/codes/Web/Note/frontend/src/pages/Login/index.css	/^.login-page {$/;"	c	language:CSS
+.undefined.google-oauth-btn	/home/roy/codes/Web/Note/frontend/src/pages/Login/index.css	/^.undefined.google-oauth-btn {$/;"	c	language:CSS
+accessType	/home/roy/codes/Web/Note/frontend/src/pages/Login/index.js	/^        accessType: "offline",$/;"	p	language:JavaScript	class:options
+clientId	/home/roy/codes/Web/Note/frontend/src/pages/Login/index.js	/^        clientId: "962878597221-fisi401jdpudb7d37cv2qb39vc9oduu0.apps.googleusercontent.com",$/;"	p	language:JavaScript	class:options
+includeGrantedScopes	/home/roy/codes/Web/Note/frontend/src/pages/Login/index.js	/^        includeGrantedScopes: true,$/;"	p	language:JavaScript	class:options
+Login	/home/roy/codes/Web/Note/frontend/src/pages/Login/index.js	/^const Login = () => {$/;"	C	language:JavaScript
+options	/home/roy/codes/Web/Note/frontend/src/pages/Login/index.js	/^                                options={options}$/;"	M	language:JavaScript	class:options
+options	/home/roy/codes/Web/Note/frontend/src/pages/Login/index.js	/^    const options: IAuthorizationOptions = {$/;"	c	language:JavaScript
+redirectHome	/home/roy/codes/Web/Note/frontend/src/pages/Login/index.js	/^    function redirectHome() {$/;"	f	language:JavaScript
+redirectUri	/home/roy/codes/Web/Note/frontend/src/pages/Login/index.js	/^        redirectUri: "http:\/\/localhost:3000\/auth\/google\/callback",        $/;"	p	language:JavaScript	class:options
+scopes	/home/roy/codes/Web/Note/frontend/src/pages/Login/index.js	/^        scopes: ["openid", "profile", "email"],$/;"	p	language:JavaScript	class:options
+true	/home/roy/codes/Web/Note/frontend/src/pages/Login/index.js	/^                                defaultStyle={true}$/;"	M	language:JavaScript	class:defaultStyle
+true	/home/roy/codes/Web/Note/frontend/src/pages/Login/index.js	/^                                displayErrors={true}>Login<\/GoogleButton>;$/;"	M	language:JavaScript	class:displayErrors
