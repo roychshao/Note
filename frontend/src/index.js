@@ -3,26 +3,25 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import Home from './pages/Home';
 import Login from './pages/Login';
-import { Router, Routes, Route } from 'react-router-dom';
-import history from './CreatedHistory';
 import reportWebVitals from './reportWebVitals';
-
+import { HashRouter, Routes, Route } from 'react-router-dom';
 
 // Router部份
-export default function pageRouter() {
+export default function Router() {
     return (
-        <Router history={history}>
-            <Route path="/" exact component={Login}>
-                <Route path="home" component={Home}/>
-            </Route>
-        </Router>
+        <HashRouter>
+            <Routes>
+                <Route path="/" exact element={<Login/>}/>
+                <Route path="home" element={<Home/>}/>
+            </Routes>
+        </HashRouter>
     );
 }
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
     <React.StrictMode>
-        <pageRouter />
+        <Router />
     </React.StrictMode>
 );
 
