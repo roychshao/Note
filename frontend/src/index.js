@@ -6,6 +6,7 @@ import Login from './pages/Login';
 import reportWebVitals from './reportWebVitals';
 import { HashRouter, Routes, Route } from 'react-router-dom';
 
+/*
 // Router部份
 export default function Router() {
     return (
@@ -17,11 +18,12 @@ export default function Router() {
         </HashRouter>
     );
 }
+*/
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
     <React.StrictMode>
-        <Router />
+        <Home />
     </React.StrictMode>
 );
 

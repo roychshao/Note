@@ -9,9 +9,10 @@ import {
     IOAuthState
 } from "react-google-oauth2";
 import { API_HOST } from './../../global/constants';
+import Home from './../Home';
 
 const LoginBtn = () => {
-   
+
     const clientId="962878597221-fisi401jdpudb7d37cv2qb39vc9oduu0.apps.googleusercontent.com"
 
     const onSuccess = (res) => {
@@ -32,36 +33,35 @@ const LoginBtn = () => {
     };
 
     return (
-        <div>
-            <GoogleAuth>
-                <GoogleAuthConsumer>
-                    {({responseState, isAuthenticated}: IOAuthState) => {
-                        if(!isAuthenticated) {
-                            console.log("not authenticated");
-                            return <GoogleButton
-                                options={options}
-                                apiUrl={`${API_HOST}/auth/google/login`}
-                                defaultStyle={true}
-                                displayErrors={true}>Login</GoogleButton>;
-                        } else {
-                            console.log("is authenticated");
-                            if(responseState.accessToken) {
-                                document.getElementById("homeLink").click();
-                                fetch(`${API_HOST}/item/?serverTimeZone=Asia/Shanghai`, {
-                                    headers: createOAuthHeaders(),
-                                })
+        <GoogleAuth>
+            <GoogleAuthConsumer>
+                {({responseState, isAuthenticated}: IOAuthState) => {
+                    if(!isAuthenticated) {
+                        console.log("not authenticated");
+                        return <GoogleButton
+                            options={options}
+                            apiUrl={`${API_HOST}/auth/google/login`}
+                            defaultStyle={true}
+                            displayErrors={true}
+                            onSubmit={onSuccess}>Login</GoogleButton>;
+                    } else {
+                        console.log("is authenticated");
+                        if(responseState.accessToken) {
+                            document.getElementById("homeLink").click();
+                            fetch(`${API_HOST}/item/?serverTimeZone=Asia/Shanghai`, {
+                                headers: createOAuthHeaders(),
+                            })
                                 .then(res => {
                                     console.log("logged in", res);
                                 })
                                 .catch(err => console.error("Just because you have a gmail account doesn't mean you have access!"))
-                            } else {
-                                console.log("not logged in");
-                            }
+                        } else {
+                            console.log("not logged in");
                         }
-                    }}
-                </GoogleAuthConsumer>
-            </GoogleAuth>
-        </div>
+                    }
+                }}
+            </GoogleAuthConsumer>
+        </GoogleAuth>
     )
 
 }

@@ -1,5 +1,6 @@
 import glass from './../public/glass.png';
 import info from './../public/info.png';
+import LoginBtn from './../../Login/LoginBtn'
 import { GOOGLE_CLIENT_ID } from '../../../global/constants';
 import { API_HOST } from '../../../global/constants';
 import { useState } from 'react';
@@ -49,7 +50,8 @@ const Topnav = ({setSidebarStatus, setData, setCancelSearch}) => {
                 console.log(prev);
                 return prev * -1;
                 })}}>C</p>
-            <img className="info-icon" src={info} alt="info icon" height="30px"/>
+            <LoginBtn/>
+            {/*<img className="info-icon" src={info} alt="info icon" height="30px"/>*/}
         </div>
     )
 }
