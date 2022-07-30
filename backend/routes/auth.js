@@ -81,7 +81,7 @@ function isLoggedIn(req, res, next) {
 }
 
 router.get('/google/success', isLoggedIn, (req, res, next) => {
-    //console.log('req.user : ', req.user);
+    console.log('req.user : ', req.user);
     //console.log("session");
     // console.log(req.sessionID, req.session, res.getHeaders())
     if(req.user.result === "USER_NOT_EXIST_IN_DB") {
@@ -89,7 +89,7 @@ router.get('/google/success', isLoggedIn, (req, res, next) => {
         next();
     } else {
         console.log(req.user.result);
-        res.redirect("http://localhost:3000");
+        res.redirect("http://localhost:3000/item");
     }
 }, signup, get_items);
 

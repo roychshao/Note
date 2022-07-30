@@ -18,14 +18,16 @@ development	/home/roy/codes/Web/Note/frontend/package.json	/^    "development": 
 eject	/home/roy/codes/Web/Note/frontend/package.json	/^    "eject": "react-scripts eject",$/;"	s	language:JSON	object:scripts
 eslintConfig	/home/roy/codes/Web/Note/frontend/package.json	/^  "eslintConfig": {$/;"	o	language:JSON
 extends	/home/roy/codes/Web/Note/frontend/package.json	/^    "extends": [$/;"	a	language:JSON	object:eslintConfig
-json-server	/home/roy/codes/Web/Note/frontend/package.json	/^    "json-server": "^0.17.0",$/;"	s	language:JSON	object:dependencies
+gapi-script	/home/roy/codes/Web/Note/frontend/package.json	/^    "gapi-script": "^1.2.0",$/;"	s	language:JSON	object:dependencies
 name	/home/roy/codes/Web/Note/frontend/package.json	/^  "name": "tmp",$/;"	s	language:JSON
 private	/home/roy/codes/Web/Note/frontend/package.json	/^  "private": true,$/;"	b	language:JSON
 production	/home/roy/codes/Web/Note/frontend/package.json	/^    "production": [$/;"	a	language:JSON	object:browserslist
-proxy	/home/roy/codes/Web/Note/frontend/package.json	/^  "proxy": "http:\/\/localhost:3001"$/;"	s	language:JSON
+proxy	/home/roy/codes/Web/Note/frontend/package.json	/^  "proxy": "http:\/\/localhost:3000"$/;"	s	language:JSON
 react	/home/roy/codes/Web/Note/frontend/package.json	/^    "react": "^18.2.0",$/;"	s	language:JSON	object:dependencies
 react-bootstrap	/home/roy/codes/Web/Note/frontend/package.json	/^    "react-bootstrap": "^2.4.0",$/;"	s	language:JSON	object:dependencies
 react-dom	/home/roy/codes/Web/Note/frontend/package.json	/^    "react-dom": "^18.2.0",$/;"	s	language:JSON	object:dependencies
+react-google-login	/home/roy/codes/Web/Note/frontend/package.json	/^    "react-google-login": "^5.2.2",$/;"	s	language:JSON	object:dependencies
+react-router-dom	/home/roy/codes/Web/Note/frontend/package.json	/^    "react-router-dom": "^6.3.0",$/;"	s	language:JSON	object:dependencies
 react-scripts	/home/roy/codes/Web/Note/frontend/package.json	/^    "react-scripts": "5.0.1",$/;"	s	language:JSON	object:dependencies
 scripts	/home/roy/codes/Web/Note/frontend/package.json	/^  "scripts": {$/;"	o	language:JSON
 server	/home/roy/codes/Web/Note/frontend/package.json	/^    "server": "json-server --watch db.json"$/;"	s	language:JSON	object:scripts
