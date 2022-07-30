@@ -6,24 +6,23 @@ import Login from './pages/Login';
 import reportWebVitals from './reportWebVitals';
 import { HashRouter, Routes, Route } from 'react-router-dom';
 
-/*
 // Router部份
 export default function Router() {
     return (
         <HashRouter>
             <Routes>
-                <Route path="/" exact element={<Login/>}/>
-                <Route path="home" element={<Home/>}/>
+                <Route path="/" element={<Login/>}/>
+                <Route path="/item" element={<Home/>}/>
             </Routes>
         </HashRouter>
     );
 }
-*/
+
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
     <React.StrictMode>
-        <Home />
+        <Router/>
     </React.StrictMode>
 );
 
