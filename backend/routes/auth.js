@@ -66,12 +66,10 @@ passport.serializeUser(function (user, done) {
 passport.deserializeUser(function (user, done) {
     done(null, user);
 })
-/*
-router.get(
-  "/google/login",
-  passport.authenticate("google", { scope: ["email", "profile"] })
+
+router.post("/google/login", passport.authenticate("google", 
+    { scope: ["email", "profile"] }),
 );
-*/
 
 router.get('/google/callback', passport.authenticate('google', {
     scope: ["email", "profile"],

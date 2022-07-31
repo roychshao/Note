@@ -1,11 +1,8 @@
 !_TAG_FILE_SORTED	2	/0=unsorted, 1=sorted, 2=foldcase/
 .login-page	/home/roy/codes/Web/Note/frontend/src/pages/Login/index.css	/^.login-page {$/;"	c	language:CSS
-clientId	/home/roy/codes/Web/Note/frontend/src/pages/Login/index.js	/^                    clientId={clientId}$/;"	M	language:JavaScript	class:clientId
 clientId	/home/roy/codes/Web/Note/frontend/src/pages/Login/index.js	/^const clientId="962878597221-fisi401jdpudb7d37cv2qb39vc9oduu0.apps.googleusercontent.com"$/;"	C	language:JavaScript
 Login	/home/roy/codes/Web/Note/frontend/src/pages/Login/index.js	/^const Login = () => {$/;"	C	language:JavaScript
-onFailure	/home/roy/codes/Web/Note/frontend/src/pages/Login/index.js	/^                    onFailure={onFailure}$/;"	M	language:JavaScript	class:onFailure
+onFailure	/home/roy/codes/Web/Note/frontend/src/pages/Login/index.js	/^                        onError={onFailure}$/;"	M	language:JavaScript	class:onError
 onFailure	/home/roy/codes/Web/Note/frontend/src/pages/Login/index.js	/^const onFailure = (response) => {$/;"	C	language:JavaScript
-onSuccess	/home/roy/codes/Web/Note/frontend/src/pages/Login/index.js	/^                    onSuccess={onSuccess}$/;"	M	language:JavaScript	class:onSuccess
+onSuccess	/home/roy/codes/Web/Note/frontend/src/pages/Login/index.js	/^                        onSuccess={onSuccess}$/;"	M	language:JavaScript	class:onSuccess
 onSuccess	/home/roy/codes/Web/Note/frontend/src/pages/Login/index.js	/^const onSuccess = (response) => {$/;"	C	language:JavaScript
-single_host_origin	/home/roy/codes/Web/Note/frontend/src/pages/Login/index.js	/^                    cookiePolicy={'single_host_origin'}$/;"	M	language:JavaScript	class:cookiePolicy
-true	/home/roy/codes/Web/Note/frontend/src/pages/Login/index.js	/^                    isSignedIn={true}$/;"	M	language:JavaScript	class:isSignedIn
