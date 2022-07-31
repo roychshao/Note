@@ -66,12 +66,15 @@ passport.serializeUser(function (user, done) {
 passport.deserializeUser(function (user, done) {
     done(null, user);
 })
-
-router.get('/google/login', passport.authenticate('google', {
-    scope: [ 'email', 'profile' ],
-}));
+/*
+router.get(
+  "/google/login",
+  passport.authenticate("google", { scope: ["email", "profile"] })
+);
+*/
 
 router.get('/google/callback', passport.authenticate('google', {
+    scope: ["email", "profile"],
     successRedirect: "/auth/google/success",
     failureRedirect: "/auth/google/failure"
 }));
@@ -89,7 +92,7 @@ router.get('/google/success', isLoggedIn, (req, res, next) => {
         next();
     } else {
         console.log(req.user.result);
-        res.redirect("http://localhost:3000/item");
+        res.redirect("http://localhost:3000");
     }
 }, signup, get_items);
 
