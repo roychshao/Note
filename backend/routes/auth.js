@@ -94,7 +94,7 @@ router.get('/google/success', isLoggedIn, (req, res, next) => {
         console.log(req.user.result);
         res.redirect("http://localhost:3000");
     }
-}, signup, get_items);
+}, signup);
 
 router.get('google/failure', (req, res) => {
     res.send("Failed to authenticate..");

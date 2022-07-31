@@ -1,13 +1,13 @@
 import { Link } from 'react-router-dom';
 import './index.css';
 import { GoogleLogin } from 'react-google-login';
-import { gapi } from 'gapi-script';
-import { useEffect } from 'react';
+
+
+const clientId="962878597221-fisi401jdpudb7d37cv2qb39vc9oduu0.apps.googleusercontent.com"
 
 const onSuccess = (response) => {
     console.log("onSuccess:" );
     console.log(response);
-    document.getElementById("homeLink").click();
 }
 
 const onFailure = (response) => {
@@ -15,22 +15,7 @@ const onFailure = (response) => {
     console.error(response);
 }
 
-const clientId="962878597221-fisi401jdpudb7d37cv2qb39vc9oduu0.apps.googleusercontent.com"
-
 const Login = () => {
-
-    /*
-    useEffect(() => {
-        function start() {
-            gapi.client.init({
-                clientId: clientId,
-                scope: "email profile"
-            })
-        }
-        return start();
-    }, [])
-    */
-
     return (
         <div className="login-page">
             <Link to="/item" id="homeLink"></Link>

@@ -40,12 +40,12 @@ const Topnav = ({setSidebarStatus, setData, setCancelSearch}) => {
     }
 
     return (
-        <div className="topnav" width="100%">
+        <div className="topnav">
             <b className="sidebar-btn" onClick={openSidebar}>三</b>
             <input id="searching-block" type="search" placeholder="Search..."/>
-            <img className="glass-icon" src={glass} alt="glass icon" height="30px"
+            <img className="glass-icon" src={glass} alt="glass icon" height="35px"
                  onClick={()=>{sendSearchRequest()}}/>
-            <p onClick={()=>{setCancelSearch(function(prev) {
+            <p className="reset" onClick={()=>{setCancelSearch(function(prev) {
                 console.log(prev);
                 return prev * -1;
                 })}}>C</p>

@@ -1,7 +1,7 @@
 !_TAG_FILE_SORTED	2	/0=unsorted, 1=sorted, 2=foldcase/
 addItem	/home/roy/codes/Web/Note/frontend/src/pages/Home/components/Edit.js	/^    async function addItem() {$/;"	f	language:JavaScript
 AnonymousFunction208ba7590100	/home/roy/codes/Web/Note/frontend/src/pages/Home/components/Topnav.js	/^            data.sort(function(a,b) {$/;"	f	language:JavaScript
-AnonymousFunction208ba7590200	/home/roy/codes/Web/Note/frontend/src/pages/Home/components/Topnav.js	/^            <p onClick={()=>{setCancelSearch(function(prev) {$/;"	f	language:JavaScript
+AnonymousFunction208ba7590200	/home/roy/codes/Web/Note/frontend/src/pages/Home/components/Topnav.js	/^            <p className="reset" onClick={()=>{setCancelSearch(function(prev) {$/;"	f	language:JavaScript
 AnonymousFunction253cd4f00100	/home/roy/codes/Web/Note/frontend/src/pages/Home/components/Item.js	/^        setData(function(prev) {$/;"	f	language:JavaScript	function:deleteItem
 AnonymousFunctioncc4d90870100	/home/roy/codes/Web/Note/frontend/src/pages/Home/components/Edit.js	/^        setData(function(prevData) {$/;"	f	language:JavaScript	function:addItem
 data	/home/roy/codes/Web/Note/frontend/src/pages/Home/components/List.js	/^const List = ({data, setData, renderStatus, setObj}) => {$/;"	M	language:JavaScript	class:List

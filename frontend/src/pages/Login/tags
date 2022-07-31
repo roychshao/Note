@@ -1,27 +1,11 @@
 !_TAG_FILE_SORTED	2	/0=unsorted, 1=sorted, 2=foldcase/
-${API_HOST}/auth/google/login	/home/roy/codes/Web/Note/frontend/src/pages/Login/LoginBtn.js	/^                            apiUrl={`${API_HOST}\/auth\/google\/login`}$/;"	M	language:JavaScript	class:apiUrl
 .login-page	/home/roy/codes/Web/Note/frontend/src/pages/Login/index.css	/^.login-page {$/;"	c	language:CSS
-.wrapper	/home/roy/codes/Web/Note/frontend/src/pages/Login/index.css	/^.wrapper {$/;"	c	language:CSS
-accessType	/home/roy/codes/Web/Note/frontend/src/pages/Login/LoginBtn.js	/^        accessType: "offline",$/;"	p	language:JavaScript	class:options
 clientId	/home/roy/codes/Web/Note/frontend/src/pages/Login/index.js	/^                    clientId={clientId}$/;"	M	language:JavaScript	class:clientId
 clientId	/home/roy/codes/Web/Note/frontend/src/pages/Login/index.js	/^const clientId="962878597221-fisi401jdpudb7d37cv2qb39vc9oduu0.apps.googleusercontent.com"$/;"	C	language:JavaScript
-clientId	/home/roy/codes/Web/Note/frontend/src/pages/Login/LoginBtn.js	/^        clientId: clientId,$/;"	p	language:JavaScript	class:options
-clientId	/home/roy/codes/Web/Note/frontend/src/pages/Login/LoginBtn.js	/^    const clientId="962878597221-fisi401jdpudb7d37cv2qb39vc9oduu0.apps.googleusercontent.com"$/;"	C	language:JavaScript
-includeGrantedScopes	/home/roy/codes/Web/Note/frontend/src/pages/Login/LoginBtn.js	/^        includeGrantedScopes: true,$/;"	p	language:JavaScript	class:options
 Login	/home/roy/codes/Web/Note/frontend/src/pages/Login/index.js	/^const Login = () => {$/;"	C	language:JavaScript
-LoginBtn	/home/roy/codes/Web/Note/frontend/src/pages/Login/LoginBtn.js	/^const LoginBtn = () => {$/;"	C	language:JavaScript
 onFailure	/home/roy/codes/Web/Note/frontend/src/pages/Login/index.js	/^                    onFailure={onFailure}$/;"	M	language:JavaScript	class:onFailure
 onFailure	/home/roy/codes/Web/Note/frontend/src/pages/Login/index.js	/^const onFailure = (response) => {$/;"	C	language:JavaScript
-onFailure	/home/roy/codes/Web/Note/frontend/src/pages/Login/LoginBtn.js	/^    const onFailure = (res) => {$/;"	C	language:JavaScript
 onSuccess	/home/roy/codes/Web/Note/frontend/src/pages/Login/index.js	/^                    onSuccess={onSuccess}$/;"	M	language:JavaScript	class:onSuccess
 onSuccess	/home/roy/codes/Web/Note/frontend/src/pages/Login/index.js	/^const onSuccess = (response) => {$/;"	C	language:JavaScript
-onSuccess	/home/roy/codes/Web/Note/frontend/src/pages/Login/LoginBtn.js	/^                            onSubmit={onSuccess}>Login<\/GoogleButton>;$/;"	M	language:JavaScript	class:onSubmit
-onSuccess	/home/roy/codes/Web/Note/frontend/src/pages/Login/LoginBtn.js	/^    const onSuccess = (res) => {$/;"	C	language:JavaScript
-options	/home/roy/codes/Web/Note/frontend/src/pages/Login/LoginBtn.js	/^                            options={options}$/;"	M	language:JavaScript	class:options
-options	/home/roy/codes/Web/Note/frontend/src/pages/Login/LoginBtn.js	/^    const options: IAuthorizationOptions = {$/;"	c	language:JavaScript
-redirectUri	/home/roy/codes/Web/Note/frontend/src/pages/Login/LoginBtn.js	/^        redirectUri: "http:\/\/localhost:3000\/auth\/google\/callback",        $/;"	p	language:JavaScript	class:options
-scopes	/home/roy/codes/Web/Note/frontend/src/pages/Login/LoginBtn.js	/^        scopes: ["openid", "profile", "email"],$/;"	p	language:JavaScript	class:options
 single_host_origin	/home/roy/codes/Web/Note/frontend/src/pages/Login/index.js	/^                    cookiePolicy={'single_host_origin'}$/;"	M	language:JavaScript	class:cookiePolicy
 true	/home/roy/codes/Web/Note/frontend/src/pages/Login/index.js	/^                    isSignedIn={true}$/;"	M	language:JavaScript	class:isSignedIn
-true	/home/roy/codes/Web/Note/frontend/src/pages/Login/LoginBtn.js	/^                            defaultStyle={true}$/;"	M	language:JavaScript	class:defaultStyle
-true	/home/roy/codes/Web/Note/frontend/src/pages/Login/LoginBtn.js	/^                            displayErrors={true}$/;"	M	language:JavaScript	class:displayErrors

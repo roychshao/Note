@@ -95,7 +95,7 @@ const Home = () => {
     return (
         <div style={styles.div}>
             <Topnav setSidebarStatus={setSidebarStatus} setData={setData} setCancelSearch={setCancelSearch}/>
-            <Container fluid style={styles.container} className="container">
+            <Container fluid style={styles.container}>
                 <Row style={styles.row}>
                     <Col className="g-0">
                         <Sidebar sidebarStatus={sidebarStatus} setSidebarStatus={setSidebarStatus}/>

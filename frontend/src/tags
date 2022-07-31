@@ -1,3 +1,5 @@
 !_TAG_FILE_SORTED	2	/0=unsorted, 1=sorted, 2=foldcase/
+body	/home/roy/codes/Web/Note/frontend/src/index.css	/^body {$/;"	s	language:CSS
+code	/home/roy/codes/Web/Note/frontend/src/index.css	/^code {$/;"	s	language:CSS
 root	/home/roy/codes/Web/Note/frontend/src/index.js	/^const root = ReactDOM.createRoot(document.getElementById('root'));$/;"	C	language:JavaScript
 Router	/home/roy/codes/Web/Note/frontend/src/index.js	/^export default function Router() {$/;"	f	language:JavaScript

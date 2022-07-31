@@ -12,7 +12,7 @@ export const signup = async (req, res, next) => {
             "data": {}
         }
         console.log(response);
-        next();
+        res.redirect("http://localhost:3000");
     }).catch(err => {
         var response = {
             "success": false,
