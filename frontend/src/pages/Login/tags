@@ -2,7 +2,7 @@
 .login-page	/home/roy/codes/Web/Note/frontend/src/pages/Login/index.css	/^.login-page {$/;"	c	language:CSS
 clientId	/home/roy/codes/Web/Note/frontend/src/pages/Login/index.js	/^const clientId="962878597221-fisi401jdpudb7d37cv2qb39vc9oduu0.apps.googleusercontent.com"$/;"	C	language:JavaScript
 Login	/home/roy/codes/Web/Note/frontend/src/pages/Login/index.js	/^const Login = () => {$/;"	C	language:JavaScript
-onFailure	/home/roy/codes/Web/Note/frontend/src/pages/Login/index.js	/^                        onError={onFailure}$/;"	M	language:JavaScript	class:onError
-onFailure	/home/roy/codes/Web/Note/frontend/src/pages/Login/index.js	/^const onFailure = (response) => {$/;"	C	language:JavaScript
+onError	/home/roy/codes/Web/Note/frontend/src/pages/Login/index.js	/^                        onError={onError}$/;"	M	language:JavaScript	class:onError
+onError	/home/roy/codes/Web/Note/frontend/src/pages/Login/index.js	/^const onError = (response) => {$/;"	C	language:JavaScript
 onSuccess	/home/roy/codes/Web/Note/frontend/src/pages/Login/index.js	/^                        onSuccess={onSuccess}$/;"	M	language:JavaScript	class:onSuccess
-onSuccess	/home/roy/codes/Web/Note/frontend/src/pages/Login/index.js	/^const onSuccess = (response) => {$/;"	C	language:JavaScript
+onSuccess	/home/roy/codes/Web/Note/frontend/src/pages/Login/index.js	/^const onSuccess = async (response) => {$/;"	C	language:JavaScript
