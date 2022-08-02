@@ -4,17 +4,17 @@ import './index.css';
 import Home from './pages/Home';
 import Login from './pages/Login';
 import reportWebVitals from './reportWebVitals';
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { HashRouter, Routes, Route } from 'react-router-dom';
 
 // Router部份
 export default function Router() {
     return (
-        <BrowserRouter>
+        <HashRouter>
             <Routes>
                 <Route path="/" element={<Login/>}/>
-                <Route path="/item" element={<Home/>}/>
+                <Route path="/home" element={<Home/>}/>
             </Routes>
-        </BrowserRouter>
+        </HashRouter>
     );
 }
 

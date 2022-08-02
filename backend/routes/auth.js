@@ -90,7 +90,7 @@ router.get('/google/success', isLoggedIn, (req, res, next) => {
         next();
     } else {
         console.log(req.user.result);
-        res.redirect("http://localhost:3000");
+        res.redirect("http://localhost:3000/#/home");
     }
 }, signup);
 
