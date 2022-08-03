@@ -1,5 +1,6 @@
 !_TAG_FILE_SORTED	2	/0=unsorted, 1=sorted, 2=foldcase/
 accessLogStream	/home/roy/codes/Web/Note/backend/index.js	/^var accessLogStream = fs.createWriteStream(path.join(__dirname, 'access.log'), { flags: 'a' })$/;"	v	language:JavaScript
+AnonymousFunction9126251e0100	/home/roy/codes/Web/Note/backend/index.js	/^        req.session.destroy(function(e){$/;"	f	language:JavaScript
 app	/home/roy/codes/Web/Note/backend/index.js	/^const app = express();$/;"	C	language:JavaScript
 author	/home/roy/codes/Web/Note/backend/package.json	/^  "author": "roy",$/;"	s	language:JSON
 dependencies	/home/roy/codes/Web/Note/backend/package.json	/^  "dependencies": {$/;"	o	language:JSON

@@ -84,3 +84,17 @@ app.get('/', (req, res) => {
     };
     res.status(201).json(response);
 })
+
+// route for logging out
+app.get('/auth/logout', (req, res) => {
+    try {
+        req.session.destroy(function(e){
+            req.logout(() => {});
+        });
+    } catch(err) {
+        console.err(err);
+        res.status(400).send("logout failed");
+    }
+    res.status(201).send("logout success");
+})
+

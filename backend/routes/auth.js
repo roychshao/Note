@@ -98,11 +98,4 @@ router.get('google/failure', (req, res) => {
     res.send("Failed to authenticate..");
 })
 
-router.get("/logout", (req, res) => {
-    req.logout();
-    req.session.destroy();
-    res.send("Goodbye!");
-});
-
-
 export default router;

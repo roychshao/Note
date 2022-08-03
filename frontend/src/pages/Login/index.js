@@ -1,7 +1,6 @@
 import { Link } from 'react-router-dom';
 import './index.css';
 import { GoogleOAuthProvider, GoogleLogin } from '@react-oauth/google';
-import { gapi } from 'gapi-script';
 
 const clientId="962878597221-fisi401jdpudb7d37cv2qb39vc9oduu0.apps.googleusercontent.com"
 
