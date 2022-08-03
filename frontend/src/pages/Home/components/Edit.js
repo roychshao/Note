@@ -1,6 +1,5 @@
 import { useState } from 'react';
 import { v4 } from 'uuid';
-import { API_HOST } from '../../../global/constants'
 import './../index.css';
 
 

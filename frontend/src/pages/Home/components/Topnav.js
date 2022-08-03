@@ -1,8 +1,8 @@
 import glass from './../public/glass.png';
 import info from './../public/info.png';
-import { GOOGLE_CLIENT_ID } from '../../../global/constants';
 import { API_HOST } from '../../../global/constants';
 import { useState } from 'react';
+import { Link } from 'react-router-dom';
 
 
 const Topnav = ({setSidebarStatus, setData, setCancelSearch}) => {
@@ -12,7 +12,7 @@ const Topnav = ({setSidebarStatus, setData, setCancelSearch}) => {
     //獲取搜尋資料
     const sendSearchRequest = async () => {
         var data = [];
-        const searchStr = document.getElementById("searching-block").value;
+        var searchStr = document.getElementById("searching-block").value;
         setSearchStr(searchStr);
         await fetch(`${API_HOST}/item/search?search_str=${searchStr}`)
         .then(res => res.json())
@@ -39,8 +39,16 @@ const Topnav = ({setSidebarStatus, setData, setCancelSearch}) => {
         setSidebarStatus(true);
     }
 
+    const logout = async () => {
+        await fetch(`${API_HOST}/auth/logout`)
+        .then(result => {
+            document.getElementById("loginLink").click();
+        })
+    }
+
     return (
         <div className="topnav">
+            <Link to="/" id="loginLink"></Link>
             <b className="sidebar-btn" onClick={openSidebar}>三</b>
             <input id="searching-block" type="search" placeholder="Search..."/>
             <img className="glass-icon" src={glass} alt="glass icon" height="35px"
@@ -49,7 +57,7 @@ const Topnav = ({setSidebarStatus, setData, setCancelSearch}) => {
                 console.log(prev);
                 return prev * -1;
                 })}}>C</p>
-            <img className="info-icon" src={info} alt="info icon" height="30px"/>
+            <img className="info-icon" src={info} alt="info icon" height="30px" onClick={logout}/>
         </div>
     )
 }

@@ -23,7 +23,7 @@
 #searching-block {
     box-sizing: border-box;
     height: 2rem;
-    width: 55%;
+    width: 60%;
     border: 1px solid #000000;
     border-radius: 0.625rem;
     padding-left: 0.4375rem;
@@ -38,7 +38,7 @@
 
 .reset {
     position: absolute;
-    right: 9%;
+    right: 10%;
 }
 
 .info-icon {
@@ -162,7 +162,7 @@
 .texts {
     display: block;
     padding-left: 0.5rem;
-    width: 75%;
+    width: 82%;
 }
 
 .item-first-line, .item-second-line, .item-third-line {
@@ -200,6 +200,12 @@
 @media only screen and (max-width: 680px) {
     .info-icon {
         right: 3%;
+    }
+    .reset {
+        right: 12%;
+    }
+    .texts {
+        width: 75%;
     }
 }
 
