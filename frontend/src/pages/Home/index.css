@@ -187,6 +187,24 @@
     color: #46A3FF;
 }
 
+.item-done {
+    height: 2.7rem;
+    width: 4rem;
+    color: white;
+    background-color: #8E8E8E;
+    border: 1px solid #9E9E9E;
+    border-radius: 10px;
+}
+
+.item-collected {
+    height: 2.7rem;
+    width: 4rem;
+    color: white;
+    background-color: #FFDC35;
+    border: 1px solid #9E9E9E;
+    border-radius: 10px;
+}
+
 .item-delete {
     height: 2.7rem;
     width: 4rem;

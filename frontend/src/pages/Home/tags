@@ -13,7 +13,9 @@
 .input-box	/home/roy/codes/Web/Note/frontend/src/pages/Home/index.css	/^.input-box {$/;"	c	language:CSS
 .input-text	/home/roy/codes/Web/Note/frontend/src/pages/Home/index.css	/^.input-text {$/;"	c	language:CSS
 .item-box	/home/roy/codes/Web/Note/frontend/src/pages/Home/index.css	/^.item-box {$/;"	c	language:CSS
+.item-collected	/home/roy/codes/Web/Note/frontend/src/pages/Home/index.css	/^.item-collected {$/;"	c	language:CSS
 .item-delete	/home/roy/codes/Web/Note/frontend/src/pages/Home/index.css	/^.item-delete {$/;"	c	language:CSS
+.item-done	/home/roy/codes/Web/Note/frontend/src/pages/Home/index.css	/^.item-done {$/;"	c	language:CSS
 .item-first-line	/home/roy/codes/Web/Note/frontend/src/pages/Home/index.css	/^.item-first-line {$/;"	c	language:CSS
 .item-first-line	/home/roy/codes/Web/Note/frontend/src/pages/Home/index.css	/^.item-first-line, .item-second-line, .item-third-line {$/;"	c	language:CSS
 .item-second-line	/home/roy/codes/Web/Note/frontend/src/pages/Home/index.css	/^.item-first-line, .item-second-line, .item-third-line {$/;"	c	language:CSS
@@ -44,8 +46,8 @@ paddingRight	/home/roy/codes/Web/Note/frontend/src/pages/Home/index.js	/^       
 putData	/home/roy/codes/Web/Note/frontend/src/pages/Home/index.js	/^async function putData(obj, operation) {$/;"	f	language:JavaScript
 renderStatus	/home/roy/codes/Web/Note/frontend/src/pages/Home/index.js	/^    const renderStatus = useRef(0);$/;"	C	language:JavaScript
 row	/home/roy/codes/Web/Note/frontend/src/pages/Home/index.js	/^        row: {$/;"	c	language:JavaScript	class:useEffect
-setCancelSearch	/home/roy/codes/Web/Note/frontend/src/pages/Home/index.js	/^    const [cancelSearch, setCancelSearch] = useState(1);$/;"	C	language:JavaScript
 setData	/home/roy/codes/Web/Note/frontend/src/pages/Home/index.js	/^    const [data, setData] = useState([]);$/;"	C	language:JavaScript
+setGetItem	/home/roy/codes/Web/Note/frontend/src/pages/Home/index.js	/^    const [getItem, setGetItem] = useState(1);$/;"	C	language:JavaScript
 setObj	/home/roy/codes/Web/Note/frontend/src/pages/Home/index.js	/^    const [obj, setObj] = useState({});$/;"	C	language:JavaScript
 setSidebarStatus	/home/roy/codes/Web/Note/frontend/src/pages/Home/index.js	/^    const [sidebarStatus, setSidebarStatus] = useState(false);$/;"	C	language:JavaScript
 styles	/home/roy/codes/Web/Note/frontend/src/pages/Home/index.js	/^        <div style={styles.div}>$/;"	M	language:JavaScript	class:AnonymousClass361450640201

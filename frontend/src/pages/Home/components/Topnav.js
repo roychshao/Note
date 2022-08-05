@@ -5,7 +5,7 @@ import { useState } from 'react';
 import { Link } from 'react-router-dom';
 
 
-const Topnav = ({setSidebarStatus, setData, setCancelSearch}) => {
+const Topnav = ({setSidebarStatus, setData, setGetItem}) => {
     
     const [searchStr, setSearchStr] = useState("");
 
@@ -53,8 +53,7 @@ const Topnav = ({setSidebarStatus, setData, setCancelSearch}) => {
             <input id="searching-block" type="search" placeholder="Search..."/>
             <img className="glass-icon" src={glass} alt="glass icon" height="35px"
                  onClick={()=>{sendSearchRequest()}}/>
-            <p className="reset" onClick={()=>{setCancelSearch(function(prev) {
-                console.log(prev);
+            <p className="reset" onClick={()=>{setGetItem(function(prev) {
                 return prev * -1;
                 })}}>C</p>
             <img className="info-icon" src={info} alt="info icon" height="30px" onClick={logout}/>

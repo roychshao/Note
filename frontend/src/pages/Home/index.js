@@ -53,7 +53,7 @@ const Home = () => {
     const [data, setData] = useState([]);
     const [obj, setObj] = useState({});
     const [sidebarStatus, setSidebarStatus] = useState(false);
-    const [cancelSearch, setCancelSearch] = useState(1);
+    const [getItem, setGetItem] = useState(1);
     const renderStatus = useRef(0);
 
     useEffect(() => {
@@ -64,6 +64,9 @@ const Home = () => {
             } else if(renderStatus.current === 2) {
                 console.log(obj.id);
                 putData(obj, 'delete');
+            } else if(renderStatus.current === 3) {
+                console.log(obj.id, obj.done, obj.collected);
+                putData(obj, 'mark');
             }
             renderStatus.current = 0;
         }
@@ -76,7 +79,7 @@ const Home = () => {
                 console.log("data: " + data);
                 setData(data);
             })
-    }, [cancelSearch])
+    }, [getItem])
 
     const styles = {
         container: {
@@ -93,17 +96,17 @@ const Home = () => {
 
     return (
         <div style={styles.div}>
-            <Topnav setSidebarStatus={setSidebarStatus} setData={setData} setCancelSearch={setCancelSearch}/>
+            <Topnav setSidebarStatus={setSidebarStatus} setData={setData} setGetItem={setGetItem}/>
             <Container fluid style={styles.container}>
                 <Row style={styles.row}>
                     <Col className="g-0">
-                        <Sidebar sidebarStatus={sidebarStatus} setSidebarStatus={setSidebarStatus}/>
+                        <Sidebar sidebarStatus={sidebarStatus} setSidebarStatus={setSidebarStatus} setData={setData}/>
                     </Col>
                     <Col xs={10} className="g-0">
                         <h1 className="title">TO DO LIST</h1>
-                        <Edit setData={setData} renderStatus={renderStatus} setObj={setObj}/>
+                        <Edit setData={setData} renderStatus={renderStatus} setObj={setObj} setGetItem={setGetItem}/>
                         <hr/>
-                        <List data={data} setData={setData} renderStatus={renderStatus} setObj={setObj}/>
+                        <List data={data} setData={setData} renderStatus={renderStatus} setObj={setObj} setGetItem={setGetItem}/>
                     </Col>
                     <Col className="g-0"></Col>
                 </Row>

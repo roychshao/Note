@@ -1,8 +1,11 @@
 !_TAG_FILE_SORTED	2	/0=unsorted, 1=sorted, 2=foldcase/
 authenticate	/home/roy/codes/Web/Note/backend/db_interact/user.js	/^const authenticate = (id) => {$/;"	C	language:JavaScript
 delete_item	/home/roy/codes/Web/Note/backend/db_interact/item.js	/^const delete_item = (id) => {$/;"	C	language:JavaScript
+get_collected_items	/home/roy/codes/Web/Note/backend/db_interact/item.js	/^const get_collected_items = (user_id) => {$/;"	C	language:JavaScript
+get_done_items	/home/roy/codes/Web/Note/backend/db_interact/item.js	/^const get_done_items = (user_id) => {$/;"	C	language:JavaScript
 get_items	/home/roy/codes/Web/Note/backend/db_interact/item.js	/^const get_items = (user_id) => {$/;"	C	language:JavaScript
 insert_item	/home/roy/codes/Web/Note/backend/db_interact/item.js	/^const insert_item = (user_id, id, title, description, date, time) => {$/;"	C	language:JavaScript
+mark_item	/home/roy/codes/Web/Note/backend/db_interact/item.js	/^const mark_item = (id, done, collected) => {$/;"	C	language:JavaScript
 pool	/home/roy/codes/Web/Note/backend/db_interact/db_pool.js	/^export const pool = mysql.createPool({$/;"	C	language:JavaScript
 print_error	/home/roy/codes/Web/Note/backend/db_interact/item.js	/^function print_error(err) {$/;"	f	language:JavaScript
 print_error	/home/roy/codes/Web/Note/backend/db_interact/user.js	/^function print_error(err) {$/;"	f	language:JavaScript
