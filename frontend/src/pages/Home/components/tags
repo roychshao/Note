@@ -3,7 +3,7 @@ addItem	/home/roy/codes/Web/Note/frontend/src/pages/Home/components/Edit.js	/^  
 AnonymousFunction208ba7590100	/home/roy/codes/Web/Note/frontend/src/pages/Home/components/Topnav.js	/^            data.sort(function(a,b) {$/;"	f	language:JavaScript
 AnonymousFunction208ba7590200	/home/roy/codes/Web/Note/frontend/src/pages/Home/components/Topnav.js	/^            <p className="reset" onClick={()=>{setGetItem(function(prev) {$/;"	f	language:JavaScript
 AnonymousFunction253cd4f00100	/home/roy/codes/Web/Note/frontend/src/pages/Home/components/Item.js	/^        setData(function(prev) {$/;"	f	language:JavaScript	function:deleteItem
-AnonymousFunction253cd4f00200	/home/roy/codes/Web/Note/frontend/src/pages/Home/components/Item.js	/^        setGetItem(function(prev) {$/;"	f	language:JavaScript	function:doneItem
+AnonymousFunction253cd4f00200	/home/roy/codes/Web/Note/frontend/src/pages/Home/components/Item.js	/^        setData(function(prev) {$/;"	f	language:JavaScript	function:doneItem
 AnonymousFunction253cd4f00300	/home/roy/codes/Web/Note/frontend/src/pages/Home/components/Item.js	/^        setGetItem(function(prev) {$/;"	f	language:JavaScript	function:collectItem
 AnonymousFunctionac26addb0100	/home/roy/codes/Web/Note/frontend/src/pages/Home/components/Sidebar.js	/^            data.sort(function(a,b) {$/;"	f	language:JavaScript
 AnonymousFunctionac26addb0200	/home/roy/codes/Web/Note/frontend/src/pages/Home/components/Sidebar.js	/^            data.sort(function(a,b) {$/;"	f	language:JavaScript

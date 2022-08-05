@@ -162,7 +162,7 @@
 .texts {
     display: block;
     padding-left: 0.5rem;
-    width: 82%;
+    width: 78%;
 }
 
 .item-first-line, .item-second-line, .item-third-line {
@@ -187,22 +187,8 @@
     color: #46A3FF;
 }
 
-.item-done {
-    height: 2.7rem;
-    width: 4rem;
-    color: white;
-    background-color: #8E8E8E;
-    border: 1px solid #9E9E9E;
-    border-radius: 10px;
-}
-
-.item-collected {
-    height: 2.7rem;
-    width: 4rem;
-    color: white;
-    background-color: #FFDC35;
-    border: 1px solid #9E9E9E;
-    border-radius: 10px;
+#heart, #whiteHeart {
+    margin-right: 2.5%;
 }
 
 .item-delete {

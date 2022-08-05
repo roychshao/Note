@@ -1,7 +1,9 @@
 !_TAG_FILE_SORTED	2	/0=unsorted, 1=sorted, 2=foldcase/
+#heart	/home/roy/codes/Web/Note/frontend/src/pages/Home/index.css	/^#heart, #whiteHeart {$/;"	i	language:CSS
 #searching-block	/home/roy/codes/Web/Note/frontend/src/pages/Home/index.css	/^    #searching-block {$/;"	i	language:CSS
 #searching-block	/home/roy/codes/Web/Note/frontend/src/pages/Home/index.css	/^    #searching-block {$/;"	i	language:CSS
 #searching-block	/home/roy/codes/Web/Note/frontend/src/pages/Home/index.css	/^#searching-block {$/;"	i	language:CSS
+#whiteHeart	/home/roy/codes/Web/Note/frontend/src/pages/Home/index.css	/^#heart, #whiteHeart {$/;"	i	language:CSS
 .close-sidebar-btn	/home/roy/codes/Web/Note/frontend/src/pages/Home/index.css	/^.close-sidebar-btn {$/;"	c	language:CSS
 .cmd-btn-box	/home/roy/codes/Web/Note/frontend/src/pages/Home/index.css	/^.cmd-btn-box {$/;"	c	language:CSS
 .edit-add	/home/roy/codes/Web/Note/frontend/src/pages/Home/index.css	/^.edit-add {$/;"	c	language:CSS
@@ -13,9 +15,7 @@
 .input-box	/home/roy/codes/Web/Note/frontend/src/pages/Home/index.css	/^.input-box {$/;"	c	language:CSS
 .input-text	/home/roy/codes/Web/Note/frontend/src/pages/Home/index.css	/^.input-text {$/;"	c	language:CSS
 .item-box	/home/roy/codes/Web/Note/frontend/src/pages/Home/index.css	/^.item-box {$/;"	c	language:CSS
-.item-collected	/home/roy/codes/Web/Note/frontend/src/pages/Home/index.css	/^.item-collected {$/;"	c	language:CSS
 .item-delete	/home/roy/codes/Web/Note/frontend/src/pages/Home/index.css	/^.item-delete {$/;"	c	language:CSS
-.item-done	/home/roy/codes/Web/Note/frontend/src/pages/Home/index.css	/^.item-done {$/;"	c	language:CSS
 .item-first-line	/home/roy/codes/Web/Note/frontend/src/pages/Home/index.css	/^.item-first-line {$/;"	c	language:CSS
 .item-first-line	/home/roy/codes/Web/Note/frontend/src/pages/Home/index.css	/^.item-first-line, .item-second-line, .item-third-line {$/;"	c	language:CSS
 .item-second-line	/home/roy/codes/Web/Note/frontend/src/pages/Home/index.css	/^.item-first-line, .item-second-line, .item-third-line {$/;"	c	language:CSS
