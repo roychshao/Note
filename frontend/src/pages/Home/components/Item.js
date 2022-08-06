@@ -2,6 +2,7 @@ import doneIcon from '../public/doneIcon.png';
 import notDone from '../public/notDone.png';
 import heart from '../public/heart.png';
 import whiteHeart from '../public/whiteHeart.png';
+import deleteBtn from '../public/deleteBtn.png';
 
 const Item = ({id, title, description, date, time, done, collected, setData, renderStatus, setObj, setGetItem}) => {
 
@@ -48,9 +49,14 @@ const Item = ({id, title, description, date, time, done, collected, setData, ren
             <img id="whiteHeart" src={whiteHeart} alt="whiteHeart" onClick={()=>{collectItem()}} width="30px" style={{
                 display: collected ? "none" : "block"
             }}/>
+            <img id="item-delete" src={deleteBtn} alt="deleteBtn" onClick={deleteItem} width="30px" style={{
+                display: collected ? "none" : "block"
+            }}/>
+        {/*
             <button id="item-delete" className="item-delete" onClick={deleteItem} style={{
                 display: collected ? "none" : "block"
             }}>刪除</button>
+        */}
         </div>
     )
 }

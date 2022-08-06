@@ -103,7 +103,7 @@ const Home = () => {
                         <Sidebar sidebarStatus={sidebarStatus} setSidebarStatus={setSidebarStatus} setData={setData}/>
                     </Col>
                     <Col xs={10} className="g-0">
-                        <h1 className="title">TO DO LIST</h1>
+                        <h1 className="title">Note</h1>
                         <Edit setData={setData} renderStatus={renderStatus} setObj={setObj} setGetItem={setGetItem}/>
                         <hr/>
                         <List data={data} setData={setData} renderStatus={renderStatus} setObj={setObj} setGetItem={setGetItem}/>

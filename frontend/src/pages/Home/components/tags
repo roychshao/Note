@@ -1,42 +1,19 @@
 !_TAG_FILE_SORTED	2	/0=unsorted, 1=sorted, 2=foldcase/
-addItem	/home/roy/codes/Web/Note/frontend/src/pages/Home/components/Edit.js	/^    async function addItem() {$/;"	f	language:JavaScript
-AnonymousFunction208ba7590100	/home/roy/codes/Web/Note/frontend/src/pages/Home/components/Topnav.js	/^            data.sort(function(a,b) {$/;"	f	language:JavaScript
-AnonymousFunction208ba7590200	/home/roy/codes/Web/Note/frontend/src/pages/Home/components/Topnav.js	/^            <p className="reset" onClick={()=>{setGetItem(function(prev) {$/;"	f	language:JavaScript
-AnonymousFunction253cd4f00100	/home/roy/codes/Web/Note/frontend/src/pages/Home/components/Item.js	/^        setData(function(prev) {$/;"	f	language:JavaScript	function:deleteItem
-AnonymousFunction253cd4f00200	/home/roy/codes/Web/Note/frontend/src/pages/Home/components/Item.js	/^        setData(function(prev) {$/;"	f	language:JavaScript	function:doneItem
-AnonymousFunction253cd4f00300	/home/roy/codes/Web/Note/frontend/src/pages/Home/components/Item.js	/^        setGetItem(function(prev) {$/;"	f	language:JavaScript	function:collectItem
-AnonymousFunctionac26addb0100	/home/roy/codes/Web/Note/frontend/src/pages/Home/components/Sidebar.js	/^            data.sort(function(a,b) {$/;"	f	language:JavaScript
-AnonymousFunctionac26addb0200	/home/roy/codes/Web/Note/frontend/src/pages/Home/components/Sidebar.js	/^            data.sort(function(a,b) {$/;"	f	language:JavaScript
-AnonymousFunctioncc4d90870100	/home/roy/codes/Web/Note/frontend/src/pages/Home/components/Edit.js	/^        setData(function(prevData) {$/;"	f	language:JavaScript	function:addItem
-closeSidebar	/home/roy/codes/Web/Note/frontend/src/pages/Home/components/Sidebar.js	/^    const closeSidebar = async () => {$/;"	C	language:JavaScript
-collectItem	/home/roy/codes/Web/Note/frontend/src/pages/Home/components/Item.js	/^    function collectItem() {$/;"	f	language:JavaScript
-data	/home/roy/codes/Web/Note/frontend/src/pages/Home/components/List.js	/^const List = ({data, setData, renderStatus, setObj, setGetItem}) => {$/;"	M	language:JavaScript	class:List
-data	/home/roy/codes/Web/Note/frontend/src/pages/Home/components/Sidebar.js	/^        var data = [];$/;"	v	language:JavaScript
-data	/home/roy/codes/Web/Note/frontend/src/pages/Home/components/Sidebar.js	/^        var data = [];$/;"	v	language:JavaScript
-data	/home/roy/codes/Web/Note/frontend/src/pages/Home/components/Topnav.js	/^        var data = [];$/;"	v	language:JavaScript
-dateChange	/home/roy/codes/Web/Note/frontend/src/pages/Home/components/Edit.js	/^    function dateChange(e) {$/;"	f	language:JavaScript
-deleteItem	/home/roy/codes/Web/Note/frontend/src/pages/Home/components/Item.js	/^    function deleteItem() {$/;"	f	language:JavaScript
-descriptionChange	/home/roy/codes/Web/Note/frontend/src/pages/Home/components/Edit.js	/^    function descriptionChange(e) {$/;"	f	language:JavaScript
-doneItem	/home/roy/codes/Web/Note/frontend/src/pages/Home/components/Item.js	/^    function doneItem() {$/;"	f	language:JavaScript
-Edit	/home/roy/codes/Web/Note/frontend/src/pages/Home/components/Edit.js	/^const Edit = ({setData, renderStatus, setObj}) => {$/;"	C	language:JavaScript
-getCollectedNotes	/home/roy/codes/Web/Note/frontend/src/pages/Home/components/Sidebar.js	/^    const getCollectedNotes = async () => {$/;"	C	language:JavaScript
-getDoneNotes	/home/roy/codes/Web/Note/frontend/src/pages/Home/components/Sidebar.js	/^    const getDoneNotes = async () => {$/;"	C	language:JavaScript
-id	/home/roy/codes/Web/Note/frontend/src/pages/Home/components/Item.js	/^const Item = ({id, title, description, date, time, done, collected, setData, renderStatus, setOb/;"	M	language:JavaScript	class:Item
-Item	/home/roy/codes/Web/Note/frontend/src/pages/Home/components/Item.js	/^const Item = ({id, title, description, date, time, done, collected, setData, renderStatus, setOb/;"	C	language:JavaScript
-List	/home/roy/codes/Web/Note/frontend/src/pages/Home/components/List.js	/^const List = ({data, setData, renderStatus, setObj, setGetItem}) => {$/;"	C	language:JavaScript
-logout	/home/roy/codes/Web/Note/frontend/src/pages/Home/components/Topnav.js	/^    const logout = async () => {$/;"	C	language:JavaScript
-openSidebar	/home/roy/codes/Web/Note/frontend/src/pages/Home/components/Topnav.js	/^    const openSidebar = async () => {$/;"	C	language:JavaScript
-searchStr	/home/roy/codes/Web/Note/frontend/src/pages/Home/components/Topnav.js	/^        var searchStr = document.getElementById("searching-block").value;$/;"	v	language:JavaScript
-sendSearchRequest	/home/roy/codes/Web/Note/frontend/src/pages/Home/components/Topnav.js	/^    const sendSearchRequest = async () => {$/;"	C	language:JavaScript
-setData	/home/roy/codes/Web/Note/frontend/src/pages/Home/components/Edit.js	/^const Edit = ({setData, renderStatus, setObj}) => {$/;"	M	language:JavaScript	class:Edit
-setDate	/home/roy/codes/Web/Note/frontend/src/pages/Home/components/Edit.js	/^    const [date, setDate] = useState("");$/;"	C	language:JavaScript
-setDescription	/home/roy/codes/Web/Note/frontend/src/pages/Home/components/Edit.js	/^    const [description, setDescription] = useState("");$/;"	C	language:JavaScript
-setSearchStr	/home/roy/codes/Web/Note/frontend/src/pages/Home/components/Topnav.js	/^    const [searchStr, setSearchStr] = useState("");$/;"	C	language:JavaScript
-setSidebarStatus	/home/roy/codes/Web/Note/frontend/src/pages/Home/components/Topnav.js	/^const Topnav = ({setSidebarStatus, setData, setGetItem}) => {$/;"	M	language:JavaScript	class:Topnav
-setTime	/home/roy/codes/Web/Note/frontend/src/pages/Home/components/Edit.js	/^    const [time, setTime] = useState("");$/;"	C	language:JavaScript
-setTitle	/home/roy/codes/Web/Note/frontend/src/pages/Home/components/Edit.js	/^    const [title, setTitle] = useState("");$/;"	C	language:JavaScript
-Sidebar	/home/roy/codes/Web/Note/frontend/src/pages/Home/components/Sidebar.js	/^const Sidebar = ({sidebarStatus, setSidebarStatus, setData}) => {$/;"	C	language:JavaScript
-sidebarStatus	/home/roy/codes/Web/Note/frontend/src/pages/Home/components/Sidebar.js	/^const Sidebar = ({sidebarStatus, setSidebarStatus, setData}) => {$/;"	M	language:JavaScript	class:Sidebar
-timeChange	/home/roy/codes/Web/Note/frontend/src/pages/Home/components/Edit.js	/^    function timeChange(e) {$/;"	f	language:JavaScript
-titleChange	/home/roy/codes/Web/Note/frontend/src/pages/Home/components/Edit.js	/^    function titleChange(e) {$/;"	f	language:JavaScript
-Topnav	/home/roy/codes/Web/Note/frontend/src/pages/Home/components/Topnav.js	/^const Topnav = ({setSidebarStatus, setData, setGetItem}) => {$/;"	C	language:JavaScript
+AnonymousFunction6c97f8230100	/home/roy/codes/Note/frontend/src/pages/Home/components/Item.js	/^        setData(function(prev) {$/;"	f	language:JavaScript	function:deleteItem
+AnonymousFunction6c97f8230200	/home/roy/codes/Note/frontend/src/pages/Home/components/Item.js	/^        setData(function(prev) {$/;"	f	language:JavaScript	function:doneItem
+AnonymousFunction6c97f8230300	/home/roy/codes/Note/frontend/src/pages/Home/components/Item.js	/^        setGetItem(function(prev) {$/;"	f	language:JavaScript	function:collectItem
+AnonymousFunctionab3c634c0100	/home/roy/codes/Note/frontend/src/pages/Home/components/Topnav.js	/^            data.sort(function(a,b) {$/;"	f	language:JavaScript
+AnonymousFunctionab3c634c0200	/home/roy/codes/Note/frontend/src/pages/Home/components/Topnav.js	/^            <p className="reset" onClick={()=>{setGetItem(function(prev) {$/;"	f	language:JavaScript
+collectItem	/home/roy/codes/Note/frontend/src/pages/Home/components/Item.js	/^    function collectItem() {$/;"	f	language:JavaScript
+data	/home/roy/codes/Note/frontend/src/pages/Home/components/Topnav.js	/^        var data = [];$/;"	v	language:JavaScript
+deleteItem	/home/roy/codes/Note/frontend/src/pages/Home/components/Item.js	/^    function deleteItem() {$/;"	f	language:JavaScript
+doneItem	/home/roy/codes/Note/frontend/src/pages/Home/components/Item.js	/^    function doneItem() {$/;"	f	language:JavaScript
+id	/home/roy/codes/Note/frontend/src/pages/Home/components/Item.js	/^const Item = ({id, title, description, date, time, done, collected, setData, renderStatus, setOb/;"	M	language:JavaScript	class:Item
+Item	/home/roy/codes/Note/frontend/src/pages/Home/components/Item.js	/^const Item = ({id, title, description, date, time, done, collected, setData, renderStatus, setOb/;"	C	language:JavaScript
+logout	/home/roy/codes/Note/frontend/src/pages/Home/components/Topnav.js	/^    const logout = async () => {$/;"	C	language:JavaScript
+openSidebar	/home/roy/codes/Note/frontend/src/pages/Home/components/Topnav.js	/^    const openSidebar = async () => {$/;"	C	language:JavaScript
+searchStr	/home/roy/codes/Note/frontend/src/pages/Home/components/Topnav.js	/^        var searchStr = document.getElementById("searching-block").value;$/;"	v	language:JavaScript
+sendSearchRequest	/home/roy/codes/Note/frontend/src/pages/Home/components/Topnav.js	/^    const sendSearchRequest = async () => {$/;"	C	language:JavaScript
+setSearchStr	/home/roy/codes/Note/frontend/src/pages/Home/components/Topnav.js	/^    const [searchStr, setSearchStr] = useState("");$/;"	C	language:JavaScript
+setSidebarStatus	/home/roy/codes/Note/frontend/src/pages/Home/components/Topnav.js	/^const Topnav = ({setSidebarStatus, setData, setGetItem}) => {$/;"	M	language:JavaScript	class:Topnav
+Topnav	/home/roy/codes/Note/frontend/src/pages/Home/components/Topnav.js	/^const Topnav = ({setSidebarStatus, setData, setGetItem}) => {$/;"	C	language:JavaScript

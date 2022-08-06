@@ -162,7 +162,7 @@
 .texts {
     display: block;
     padding-left: 0.5rem;
-    width: 78%;
+    width: 80%;
 }
 
 .item-first-line, .item-second-line, .item-third-line {
@@ -191,6 +191,7 @@
     margin-right: 2.5%;
 }
 
+/*
 .item-delete {
     height: 2.7rem;
     width: 4rem;
@@ -199,6 +200,7 @@
     border: 1px solid #9E9E9E;
     border-radius: 10px;
 }
+*/
 
 /* when width < 680 */
 @media only screen and (max-width: 680px) {
@@ -209,13 +211,16 @@
         right: 12%;
     }
     .texts {
-        width: 75%;
+        width: 69%;
     }
 }
 
 @media only screen and (max-width: 400px) {
     .reset {
         right: 15%;
+    }
+    .texts {
+        width: 63%;
     }
     #searching-block {
         width: 50%;
@@ -225,5 +230,8 @@
 @media only screen and (max-width: 320px) {
     #searching-block {
         width: 40%;
+    }
+    .texts {
+        width: 60%;
     }
 }
